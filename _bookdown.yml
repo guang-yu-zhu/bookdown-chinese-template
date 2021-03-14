@@ -1,5 +1,6 @@
 book_filename: Chinese book template
 repo: https://github.com/guang-yu-zhu/bookdown-chinese-template
+output_dir: docs
 clean: [packages.bib, bookdown.bbl]
 language:
   label:
