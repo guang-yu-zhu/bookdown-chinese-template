@@ -1,6 +1,6 @@
 --- 
 title: "中文书示例"
-author: "广宇 和 婷婷"
+author: ""
 date: "`r Sys.Date()`"
 documentclass: ctexbook
 bibliography: [book.bib, packages.bib]
@@ -33,7 +33,6 @@ lapply(c(), function(pkg) {
 
 
 ```{block2, type='flushright', html.tag='p'}
-广宇和婷婷  
 于 R 村某角落
 ```
 
