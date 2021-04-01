@@ -29,7 +29,7 @@ lapply(c(), function(pkg) {
 
 # 前言 {-}
 
-第 \@ref(first) 章是关于，第 \@ref(second) 章说了，
+第 \@ref(markdown) 章是关于
 
 
 ```{block2, type='flushright', html.tag='p'}

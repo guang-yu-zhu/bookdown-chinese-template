@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>第 1 章 Markdown | 中文书示例</title>
+  <meta name="description" content="一个简单的中文书示例。" />
+  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="第 1 章 Markdown | 中文书示例" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="一个简单的中文书示例。" />
+  <meta name="github-repo" content="guang-yu-zhu/bookdown-chinese-template" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="第 1 章 Markdown | 中文书示例" />
+  
+  <meta name="twitter:description" content="一个简单的中文书示例。" />
+  
+
+
+
+<meta name="date" content="2021-04-01" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="index.html"/>
+
+<script src="libs/header-attrs/header-attrs.js"></script>
+<script src="libs/jquery/jquery.min.js"></script>
+<link href="libs/gitbook/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<link rel="stylesheet" href="css/style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">中文书示例</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>前言</a></li>
+<li class="chapter" data-level="1" data-path="markdown.html"><a href="markdown.html"><i class="fa fa-check"></i><b>1</b> Markdown</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="markdown.html"><a href="markdown.html#comment"><i class="fa fa-check"></i><b>1.1</b> Markdown 的注释</a></li>
+<li class="chapter" data-level="1.2" data-path="markdown.html"><a href="markdown.html#标题和段落"><i class="fa fa-check"></i><b>1.2</b> 标题和段落</a>
+<ul>
+<li class="chapter" data-level="1.2.1" data-path="markdown.html"><a href="markdown.html#标题-header"><i class="fa fa-check"></i><b>1.2.1</b> 标题 (Header)</a></li>
+<li class="chapter" data-level="1.2.2" data-path="markdown.html"><a href="markdown.html#水平线-horizontal-rule"><i class="fa fa-check"></i><b>1.2.2</b> 水平线 (Horizontal rule)</a></li>
+<li class="chapter" data-level="1.2.3" data-path="markdown.html"><a href="markdown.html#强调-emphasize"><i class="fa fa-check"></i><b>1.2.3</b> 强调 (Emphasize)</a></li>
+<li class="chapter" data-level="1.2.4" data-path="markdown.html"><a href="markdown.html#文字"><i class="fa fa-check"></i><b>1.2.4</b> 文字</a></li>
+<li class="chapter" data-level="1.2.5" data-path="markdown.html"><a href="markdown.html#段落"><i class="fa fa-check"></i><b>1.2.5</b> 段落</a></li>
+<li class="chapter" data-level="1.2.6" data-path="markdown.html"><a href="markdown.html#段落对齐和段间距"><i class="fa fa-check"></i><b>1.2.6</b> 段落对齐和段间距</a></li>
+<li class="chapter" data-level="1.2.7" data-path="markdown.html"><a href="markdown.html#引用blockquotes"><i class="fa fa-check"></i><b>1.2.7</b> 引用(Blockquotes)</a></li>
+<li class="chapter" data-level="1.2.8" data-path="markdown.html"><a href="markdown.html#脚注"><i class="fa fa-check"></i><b>1.2.8</b> 脚注</a></li>
+</ul></li>
+<li class="chapter" data-level="1.3" data-path="markdown.html"><a href="markdown.html#列表-list"><i class="fa fa-check"></i><b>1.3</b> 列表 (List)</a></li>
+<li class="chapter" data-level="1.4" data-path="markdown.html"><a href="markdown.html#链接-links"><i class="fa fa-check"></i><b>1.4</b> 链接 (Links)</a></li>
+<li class="chapter" data-level="1.5" data-path="markdown.html"><a href="markdown.html#markdown-math"><i class="fa fa-check"></i><b>1.5</b> 数学公式 (Equations)</a></li>
+<li class="chapter" data-level="1.6" data-path="markdown.html"><a href="markdown.html#代码块-code-chunks"><i class="fa fa-check"></i><b>1.6</b> 代码块 (Code chunks)</a></li>
+<li class="chapter" data-level="1.7" data-path="markdown.html"><a href="markdown.html#表格-tables"><i class="fa fa-check"></i><b>1.7</b> 表格 (Tables)</a></li>
+<li class="chapter" data-level="1.8" data-path="markdown.html"><a href="markdown.html#图片-image"><i class="fa fa-check"></i><b>1.8</b> 图片 (Image)</a></li>
+<li class="chapter" data-level="1.9" data-path="markdown.html"><a href="markdown.html#插入icon"><i class="fa fa-check"></i><b>1.9</b> 插入icon</a></li>
+<li class="chapter" data-level="1.10" data-path="markdown.html"><a href="markdown.html#视频-video和音乐-music"><i class="fa fa-check"></i><b>1.10</b> 视频 (Video)和音乐 (music)</a>
+<ul>
+<li class="chapter" data-level="1.10.1" data-path="markdown.html"><a href="markdown.html#本地视频"><i class="fa fa-check"></i><b>1.10.1</b> 本地视频</a></li>
+<li class="chapter" data-level="1.10.2" data-path="markdown.html"><a href="markdown.html#本地音频"><i class="fa fa-check"></i><b>1.10.2</b> 本地音频</a></li>
+<li class="chapter" data-level="1.10.3" data-path="markdown.html"><a href="markdown.html#embed-audio-from-soundcloud"><i class="fa fa-check"></i><b>1.10.3</b> Embed audio from soundcloud</a></li>
+</ul></li>
+<li class="chapter" data-level="1.11" data-path="markdown.html"><a href="markdown.html#添加附件"><i class="fa fa-check"></i><b>1.11</b> 添加附件</a></li>
+</ul></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">中文书示例</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="markdown" class="section level1" number="1">
+<h1><span class="header-section-number">第 1 章</span> Markdown</h1>
+<p><code>Markdown</code>的基础语法:</p>
+<div id="comment" class="section level2" number="1.1">
+<h2><span class="header-section-number">1.1</span> Markdown 的注释</h2>
+<ul>
+<li>文本注释：依然可使用Ctrl+Shift+C的快捷键，其结果为在待注释的文本前添加<code>&lt;!--</code>，在其后添加<code>--&gt;</code></li>
+<li>R代码注释：无论是行内代码还是代码块，对于代码正文（不包括前后的斜引号及大括号里面的内容）来说，依然可使用Ctrl+Shift+C的快捷键，其结果与普通R脚本中的注释相同，为在待注释的文本前加井号<code>#</code></li>
+</ul>
+</div>
+<div id="标题和段落" class="section level2" number="1.2">
+<h2><span class="header-section-number">1.2</span> 标题和段落</h2>
+<div id="标题-header" class="section level3" number="1.2.1">
+<h3><span class="header-section-number">1.2.1</span> 标题 (Header)</h3>
+<div class="sourceCode" id="cb1"><pre class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb1-1"><a href="markdown.html#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu"># 一级标题</span></span>
+<span id="cb1-2"><a href="markdown.html#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">## 二级标题</span></span>
+<span id="cb1-3"><a href="markdown.html#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">### 三级标题</span></span>
+<span id="cb1-4"><a href="markdown.html#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">#### 四级标题</span></span>
+<span id="cb1-5"><a href="markdown.html#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">##### 五级标题</span></span>
+<span id="cb1-6"><a href="markdown.html#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="fu">###### 六级标题</span></span></code></pre></div>
+</div>
+<div id="水平线-horizontal-rule" class="section level3" number="1.2.2">
+<h3><span class="header-section-number">1.2.2</span> 水平线 (Horizontal rule)</h3>
+<div class="sourceCode" id="cb2"><pre class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb2-1"><a href="markdown.html#cb2-1" aria-hidden="true" tabindex="-1"></a>***</span>
+<span id="cb2-2"><a href="markdown.html#cb2-2" aria-hidden="true" tabindex="-1"></a>---</span></code></pre></div>
+</div>
+<div id="强调-emphasize" class="section level3" number="1.2.3">
+<h3><span class="header-section-number">1.2.3</span> 强调 (Emphasize)</h3>
+<ul>
+<li><p>加粗和斜体</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb3-1"><a href="markdown.html#cb3-1" aria-hidden="true" tabindex="-1"></a>*这是斜体*</span>
+<span id="cb3-2"><a href="markdown.html#cb3-2" aria-hidden="true" tabindex="-1"></a>_这也是斜体_</span>
+<span id="cb3-3"><a href="markdown.html#cb3-3" aria-hidden="true" tabindex="-1"></a>**这是粗体**</span>
+<span id="cb3-4"><a href="markdown.html#cb3-4" aria-hidden="true" tabindex="-1"></a>__这也是粗体__</span>
+<span id="cb3-5"><a href="markdown.html#cb3-5" aria-hidden="true" tabindex="-1"></a>***这是粗体也是斜体***</span>
+<span id="cb3-6"><a href="markdown.html#cb3-6" aria-hidden="true" tabindex="-1"></a>___这是粗体也是斜体___</span></code></pre></div>
+<p><em>这是斜体</em></p>
+<p><em>这也是斜体</em></p>
+<p><strong>这是粗体</strong></p>
+<p><strong>这也是粗体</strong></p>
+<p><strong><em>这是粗体也是斜体</em></strong></p>
+<p><strong><em>这是粗体也是斜体</em></strong></p></li>
+<li><p>删除线</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb4-1"><a href="markdown.html#cb4-1" aria-hidden="true" tabindex="-1"></a>~~删除这句话~~</span></code></pre></div>
+<p><del>删除这句话</del></p></li>
+</ul>
+</div>
+<div id="文字" class="section level3" number="1.2.4">
+<h3><span class="header-section-number">1.2.4</span> 文字</h3>
+<div id="字体" class="section level4" number="1.2.4.1">
+<h4><span class="header-section-number">1.2.4.1</span> 字体</h4>
+<ul>
+<li><p><code>&lt;span style="font-family:宋体;"&gt;宋体&lt;/span&gt;</code>显示为<span style="font-family:宋体;">宋体</span>,<br />
+</p></li>
+<li><p><code>&lt;span style="font-family:Times New Roman;"&gt;Times New Roman&lt;/span&gt;</code>显示为<span style="font-family:Times New Roman;">Times New
+Roman</span></p></li>
+<li><p><code>&lt;span style="font-variant:small-caps;"&gt;Small Caps&lt;/span&gt;</code> 显示为 <span class="smallcaps">Small Caps</span>
+#### 字号</p></li>
+<li><p><code>&lt;span style="font-size:25px;"&gt;字号25px&lt;/span&gt;</code>显示为 <span style="font-size:25px;">字号25px</span></p></li>
+</ul>
+</div>
+<div id="文字颜色" class="section level4" number="1.2.4.2">
+<h4><span class="header-section-number">1.2.4.2</span> 文字颜色</h4>
+<ul>
+<li><code>&lt;span style="color:red;"&gt;红色文字&lt;/span&gt;</code>显示为<span style="color:red;">红色文字</span>，</li>
+<li><code>&lt;span style="color:#33C0FF;"&gt;文字色号#33C0FF&lt;/span&gt;</code>显示为 <span style="color:#33C0FF;">文字色号#33C0FF</span></li>
+</ul>
+</div>
+<div id="背景颜色" class="section level4" number="1.2.4.3">
+<h4><span class="header-section-number">1.2.4.3</span> 背景颜色</h4>
+<ul>
+<li><code>&lt;span style="background-color:yellow;"&gt;背景为黄色&lt;/span&gt;</code>显示为<span style="background-color:yellow;">背景为黄色</span></li>
+<li><code>&lt;span style="background-color:#33FF8B;"&gt;背景色号为#33FF8B&lt;/span&gt;</code>显示为<span style="background-color:#33FF8B;">背景色号为#33FF8B</span></li>
+</ul>
+</div>
+<div id="划线" class="section level4" number="1.2.4.4">
+<h4><span class="header-section-number">1.2.4.4</span> 划线</h4>
+<ul>
+<li><p><code>&lt;span style="text-decoration: underline;"&gt;下划线&lt;/span&gt;</code>显示为<span style="text-decoration: underline;">下划线</span></p></li>
+<li><p><code>&lt;span style="text-decoration: line-through;"&gt;删除线&lt;/span&gt;</code>显示为<span style="text-decoration: line-through;">删除线</span></p></li>
+<li><p><code>&lt;span style="text-decoration: overline;"&gt;上划线&lt;/span&gt;</code>显示为<span style="text-decoration: overline;">上划线</span></p></li>
+</ul>
+</div>
+<div id="字体颜色也可以使用font标签实现." class="section level4" number="1.2.4.5">
+<h4><span class="header-section-number">1.2.4.5</span> 字体颜色也可以使用<code>&lt;font&gt;</code>标签实现.</h4>
+<p><code>&lt;font color="blue"&gt;这段话使用蓝色字体.&lt;/font&gt;</code> 显示为 <font color="blue">这段话使用蓝色字体.</font></p>
+<p><code>&lt;font&gt;</code>标签常用属性:</p>
+<table>
+<thead>
+<tr class="header">
+<th>属性</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>color</td>
+<td>颜色</td>
+</tr>
+<tr class="even">
+<td>face</td>
+<td>字体</td>
+</tr>
+<tr class="odd">
+<td>size</td>
+<td>字体大小</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="段落" class="section level3" number="1.2.5">
+<h3><span class="header-section-number">1.2.5</span> 段落</h3>
+<ul>
+<li><p>一个段落由一行或连续的多行组成。</p></li>
+<li><p>段落之间以空行分隔。</p></li>
+<li><p>同一段落内的不同行在转换成HTML或docx等格式后会重新排列，原来的段内换行被当成了空格，这样的规定与LaTeX类似。</p></li>
+<li><p>普通段落不该用空格或制表符来缩进， 不应在行尾留有空格。</p></li>
+<li><p>为了在段内换行并且转化后仍保持段内换行， 输入时在前面行的末尾输入两个或两个以上空格。例如：</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb5-1"><a href="markdown.html#cb5-1" aria-hidden="true" tabindex="-1"></a>白日依山尽，黄河入海流。    </span>
+<span id="cb5-2"><a href="markdown.html#cb5-2" aria-hidden="true" tabindex="-1"></a>欲穷千里目，更上一层楼。</span></code></pre></div>
+<p>显示为：</p>
+<p>白日依山尽，黄河入海流。<br />
+欲穷千里目，更上一层楼。</p></li>
+<li><p>这样做的缺点是末尾的空格是不可见的。 可以使用HTML的<br>标签在段内换行，如：</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb6-1"><a href="markdown.html#cb6-1" aria-hidden="true" tabindex="-1"></a>白日依山尽，黄河入海流。<span class="kw">&lt;br&gt;</span></span>
+<span id="cb6-2"><a href="markdown.html#cb6-2" aria-hidden="true" tabindex="-1"></a>欲穷千里目，更上一层楼。。</span></code></pre></div>
+<p>显示为：</p>
+<p>白日依山尽，黄河入海流。<br>
+欲穷千里目，更上一层楼。</p></li>
+</ul>
+</div>
+<div id="段落对齐和段间距" class="section level3" number="1.2.6">
+<h3><span class="header-section-number">1.2.6</span> 段落对齐和段间距</h3>
+<p>使用HTML<code>&lt;p&gt;</code>标签设置对齐和段间距.</p>
+<ul>
+<li><p>对齐
+对齐是<code>&lt;p&gt;</code>标签中的<code>align</code>属性.</p>
+<table>
+<thead>
+<tr class="header">
+<th>属性</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>left</td>
+<td>左对齐</td>
+</tr>
+<tr class="even">
+<td>right</td>
+<td>右对齐</td>
+</tr>
+<tr class="odd">
+<td>center</td>
+<td>居中对齐</td>
+</tr>
+<tr class="even">
+<td>justify</td>
+<td>两端对齐</td>
+</tr>
+</tbody>
+</table>
+<div class="sourceCode" id="cb7"><pre class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb7-1"><a href="markdown.html#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;p</span><span class="ot"> align</span> <span class="ot">=</span> <span class="st">&quot;left&quot;</span><span class="kw">&gt;</span> </span>
+<span id="cb7-2"><a href="markdown.html#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;/p&gt;</span></span></code></pre></div></li>
+<li><p>行间距
+使用<code>&lt;p&gt;</code>标签的<code>style</code>属性进行设置.
+将<code>line-height</code>设置为<code>300%</code>相当于是三倍行距.</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb8-1"><a href="markdown.html#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;p</span><span class="ot"> align</span> <span class="ot">=</span> <span class="st">&quot;justify&quot;</span><span class="ot"> style=</span><span class="st">&quot;line-height:300%&quot;</span><span class="kw">&gt;</span> </span>
+<span id="cb8-2"><a href="markdown.html#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;/p&gt;</span></span></code></pre></div></li>
+</ul>
+</div>
+<div id="引用blockquotes" class="section level3" number="1.2.7">
+<h3><span class="header-section-number">1.2.7</span> 引用(Blockquotes)</h3>
+<ul>
+<li><p>引用也是段落模式，内容中的换行不起作用，空行导致分段。</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb9-1"><a href="markdown.html#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; 白日依山尽，黄河入海流。</span></span>
+<span id="cb9-2"><a href="markdown.html#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; 欲穷千里目，更上一层楼。</span></span></code></pre></div>
+<p>转换成</p>
+<blockquote>
+<p>白日依山尽，黄河入海流。
+欲穷千里目，更上一层楼。</p>
+</blockquote></li>
+<li><p>引用段落也可以仅在段落第一行写大于号， 其它行顶格写，例如下面的两段引用：</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb10-1"><a href="markdown.html#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; 远上寒山石径斜，</span></span>
+<span id="cb10-2"><a href="markdown.html#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="at">白云生处有人家。</span></span>
+<span id="cb10-3"><a href="markdown.html#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="at">&gt;</span></span>
+<span id="cb10-4"><a href="markdown.html#cb10-4" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; 停车坐爱枫林晚，</span></span>
+<span id="cb10-5"><a href="markdown.html#cb10-5" aria-hidden="true" tabindex="-1"></a><span class="at">霜叶红于二月花。。</span></span></code></pre></div>
+<p>转换成</p>
+<blockquote>
+<p>远上寒山石径斜，
+白云生处有人家。</p>
+<p>停车坐爱枫林晚，
+霜叶红于二月花。</p>
+</blockquote></li>
+<li><p>为了在引用中换行，就需要加引用空行。为了排版诗、词之类的内容，希望人为控制换行和引导空格，可以将引用中的<code>&gt;</code>替换成<code>|</code>，如：</p>
+<div class="sourceCode" id="cb11"><pre class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb11-1"><a href="markdown.html#cb11-1" aria-hidden="true" tabindex="-1"></a>| 白日依山尽，</span>
+<span id="cb11-2"><a href="markdown.html#cb11-2" aria-hidden="true" tabindex="-1"></a>| 黄河入海流。</span>
+<span id="cb11-3"><a href="markdown.html#cb11-3" aria-hidden="true" tabindex="-1"></a>| 欲穷千里目，</span>
+<span id="cb11-4"><a href="markdown.html#cb11-4" aria-hidden="true" tabindex="-1"></a>| 更上一层楼。</span></code></pre></div>
+<p>转换成</p>
+<div class="line-block">白日依山尽，<br />
+黄河入海流。<br />
+欲穷千里目，<br />
+更上一层楼。</div></li>
+<li><p>引用内也可以嵌套其它的Markdown格式如标题、列表等。 引用前后应该有空行把引用内容与其他内容分隔开。</p>
+<div class="sourceCode" id="cb12"><pre class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb12-1"><a href="markdown.html#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; 例如</span></span>
+<span id="cb12-2"><a href="markdown.html#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="at">&gt;</span>  </span>
+<span id="cb12-3"><a href="markdown.html#cb12-3" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; (1) 顶层一；</span></span>
+<span id="cb12-4"><a href="markdown.html#cb12-4" aria-hidden="true" tabindex="-1"></a><span class="at">&gt;     a) 内层1；</span></span>
+<span id="cb12-5"><a href="markdown.html#cb12-5" aria-hidden="true" tabindex="-1"></a><span class="at">&gt;     b) 内层2；</span></span>
+<span id="cb12-6"><a href="markdown.html#cb12-6" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; (2) 顶层二。</span></span></code></pre></div>
+<p>转换成</p>
+<blockquote>
+<p>例如</p>
+<ol style="list-style-type: decimal">
+<li>顶层一；
+<ol style="list-style-type: lower-alpha">
+<li>内层1；</li>
+<li>内层2；</li>
+</ol></li>
+<li>顶层二。</li>
+</ol>
+</blockquote></li>
+</ul>
+</div>
+<div id="脚注" class="section level3" number="1.2.8">
+<h3><span class="header-section-number">1.2.8</span> 脚注</h3>
+<p>Footnotes<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a> are put inside the square brackets after a caret <code>^[]</code>, e.g., <code>^[This is a footnote.]</code></p>
+</div>
+</div>
+<div id="列表-list" class="section level2" number="1.3">
+<h2><span class="header-section-number">1.3</span> 列表 (List)</h2>
+<ul>
+<li><p>有序列表 (Ordered list)</p>
+<div class="sourceCode" id="cb13"><pre class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb13-1"><a href="markdown.html#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>Item 1</span>
+<span id="cb13-2"><a href="markdown.html#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>Item 2</span>
+<span id="cb13-3"><a href="markdown.html#cb13-3" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>Item 3</span></code></pre></div></li>
+<li><p>无序列表 (Unordered list)
+无需列表可以使用<code>*</code>或者<code>-</code>来创建.</p>
+<div class="sourceCode" id="cb14"><pre class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb14-1"><a href="markdown.html#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>Item 1</span>
+<span id="cb14-2"><a href="markdown.html#cb14-2" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>Item 2</span>
+<span id="cb14-3"><a href="markdown.html#cb14-3" aria-hidden="true" tabindex="-1"></a><span class="ss">  * </span>Item 2.1</span>
+<span id="cb14-4"><a href="markdown.html#cb14-4" aria-hidden="true" tabindex="-1"></a><span class="ss">  * </span>Item 2.2</span>
+<span id="cb14-5"><a href="markdown.html#cb14-5" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>Item 3</span></code></pre></div>
+<div class="sourceCode" id="cb15"><pre class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb15-1"><a href="markdown.html#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Item 1</span>
+<span id="cb15-2"><a href="markdown.html#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Item 2</span>
+<span id="cb15-3"><a href="markdown.html#cb15-3" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>Item 2.1</span>
+<span id="cb15-4"><a href="markdown.html#cb15-4" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>Item 2.2</span>
+<span id="cb15-5"><a href="markdown.html#cb15-5" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Item 3</span></code></pre></div></li>
+<li><p>任务列表 (Task list)
+有的markdown编辑器是支持任务列表的,比如github,但是有些也不支持.比如rmakdown就是不支持的(本书就是用rmakrdown写的).</p>
+<div class="sourceCode" id="cb16"><pre class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb16-1"><a href="markdown.html#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="va">[x]</span> Write the press release</span>
+<span id="cb16-2"><a href="markdown.html#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="va">[ ]</span> Update the website</span>
+<span id="cb16-3"><a href="markdown.html#cb16-3" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="va">[ ]</span> Contact the media</span></code></pre></div></li>
+<li><p>如果列表项目中有多个段落， 这时两个列表项之间应该以空行分隔， 每个项目除了第一行外，输入的每行内容都应该缩进4个空格或者一个制表符。</p></li>
+</ul>
+</div>
+<div id="链接-links" class="section level2" number="1.4">
+<h2><span class="header-section-number">1.4</span> 链接 (Links)</h2>
+<ul>
+<li><p><strong>内部链接</strong>
+还有一种链接是内部链接，用于文内跳转。 在各级标题行的末尾， 可以添加{#自定义标签}这样的内容， 其中“自定义标签”是自己写的一个标识符， 标识符仅使用英文字母、数字、下划线、减号， 用来区分不同的位置。 比如，本文第一章添加了<code>markdown</code>为标签， 就可以用 <code>[回到第一章](#markdown)</code> 产生链接 <a href="markdown.html#markdown">回到第一章</a>。</p></li>
+<li><p>直接写url</p>
+<div class="sourceCode" id="cb17"><pre class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb17-1"><a href="markdown.html#cb17-1" aria-hidden="true" tabindex="-1"></a>https://guangyuzhu.rbind.io/</span></code></pre></div>
+<p><a href="https://guangyuzhu.rbind.io/" class="uri">https://guangyuzhu.rbind.io/</a></p></li>
+<li><p>将网址超链接给某段文字</p>
+<div class="sourceCode" id="cb18"><pre class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb18-1"><a href="markdown.html#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">我的网站</span><span class="co">](https://guangyuzhu.rbind.io/)</span></span></code></pre></div>
+<p><a href="https://yylm.rbind.io/">我的网站</a></p></li>
+<li><p>HTML插入链接
+使用<code>&lt;a&gt;</code>标签.</p>
+<div class="sourceCode" id="cb19"><pre class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb19-1"><a href="markdown.html#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;a</span><span class="ot"> href=</span><span class="st">&quot;url&quot;</span><span class="kw">&gt;</span>Link text<span class="kw">&lt;/a&gt;</span></span></code></pre></div>
+<table>
+<thead>
+<tr class="header">
+<th>属性</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>href</td>
+<td>链接网址url</td>
+</tr>
+<tr class="even">
+<td>target</td>
+<td>在何处打开链接, <code>_blank</code>, <code>_parent</code>, <code>_self</code>, <code>_top</code></td>
+</tr>
+</tbody>
+</table>
+<p>比如我们插入一个网址,点击之后在新的网页打开.</p>
+<div class="sourceCode" id="cb20"><pre class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb20-1"><a href="markdown.html#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;a</span><span class="ot"> href=</span><span class="st">&quot;https://guangyuzhu.rbind.io&quot;</span><span class="ot"> target</span> <span class="ot">=</span> <span class="st">&#39;_blank&#39;</span><span class="kw">&gt;</span>我的网站<span class="kw">&lt;/a&gt;</span>.</span></code></pre></div>
+<p><a href="https://guangyuzhu.rbind.io" target = '_blank'>我的网站</a>.</p></li>
+<li><p>将超链接绑定在图片上</p>
+<div class="sourceCode" id="cb21"><pre class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb21-1"><a href="markdown.html#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;a</span><span class="ot"> href=</span><span class="st">&quot;https://guangyuzhu.rbind.io&quot;</span><span class="ot"> target</span> <span class="ot">=</span> <span class="st">&#39;_blank&#39;</span><span class="kw">&gt;</span></span>
+<span id="cb21-2"><a href="markdown.html#cb21-2" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;img</span><span class="ot"> src</span> <span class="ot">=</span> <span class="st">&#39;figures/avatar.jpeg&#39;</span><span class="ot"> alt</span> <span class="ot">=</span> <span class="st">&#39;Guangyu Zhu&#39;</span><span class="ot"> height</span> <span class="ot">=</span> <span class="st">50%</span><span class="ot"> width</span> <span class="ot">=</span> <span class="st">50%</span> <span class="kw">/&gt;</span></span>
+<span id="cb21-3"><a href="markdown.html#cb21-3" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;/a&gt;</span></span></code></pre></div>
+<p>点击下图查看我的网站:</p>
+<p><a href="https://guangyuzhu.rbind.io" target = '_blank'>
+<img src = 'figures/avatar.jpg' alt = 'Guangyu Zhu' height = 50% width = 50% />
+</a></p></li>
+</ul>
+</div>
+<div id="markdown-math" class="section level2" number="1.5">
+<h2><span class="header-section-number">1.5</span> 数学公式 (Equations)</h2>
+<ul>
+<li><p>Inline LaTeX equations can be written in a pair of dollar signs using the LaTeX syntax, e.g., <code>$f(k) = {n \choose k} p^{k} (1-p)^{n-k}$</code> (actual output: <span class="math inline">\(f(k) = {n \choose k} p^{k} (1-p)^{n-k}\)</span>)</p></li>
+<li><p>math expressions of the display style can be written in a pair of double dollar signs, e.g., <code>$$Y=X\beta+\epsilon$$</code>, and the output looks like this:
+<span class="math display">\[Y=X\beta+\epsilon\]</span></p></li>
+<li><p>用<code>$$</code>符号在两端界定的公式后面， 可以用<code>\tag{标号}</code>命令增加人为的公式编号，如</p>
+<div class="sourceCode" id="cb22"><pre class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb22-1"><a href="markdown.html#cb22-1" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb22-2"><a href="markdown.html#cb22-2" aria-hidden="true" tabindex="-1"></a>Y=X\beta+\epsilon \tag{1}</span>
+<span id="cb22-3"><a href="markdown.html#cb22-3" aria-hidden="true" tabindex="-1"></a>$$</span></code></pre></div>
+<p>结果显示为
+<span class="math display">\[
+Y=X\beta+\epsilon \tag{1}
+\]</span></p></li>
+</ul>
+<!-- - 要注意的是， 在`$$`界定的数学公式内用了`aligned`, `cases`等环境后， 仅能在`\end{enviroment}`之后加`\tag{标号}`命令， 而不能写在aligned环境内。 这样， 多行的公式将不能为每行编号。例如, -->
+<ul>
+<li><p>要注意的是， <code>\tag{标号}</code>命令一个公式只能用一个，这样多行的公式将不能为每行编号。例如,</p>
+<div class="sourceCode" id="cb23"><pre class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb23-1"><a href="markdown.html#cb23-1" aria-hidden="true" tabindex="-1"></a>$$f(k;p_0^*) = </span>
+<span id="cb23-2"><a href="markdown.html#cb23-2" aria-hidden="true" tabindex="-1"></a>\begin{cases} p_0^* &amp; \text{if }k=1, <span class="sc">\\</span></span>
+<span id="cb23-3"><a href="markdown.html#cb23-3" aria-hidden="true" tabindex="-1"></a>1-p_0^* &amp; \text {if }k=0.\end{cases}  \tag{2}</span>
+<span id="cb23-4"><a href="markdown.html#cb23-4" aria-hidden="true" tabindex="-1"></a>$$</span></code></pre></div>
+<p>结果显示为
+<span class="math display">\[f(k;p_0^*) = 
+\begin{cases} p_0^* &amp; \text{if }k=1, \\
+1-p_0^* &amp; \text {if }k=0.\end{cases}  \tag{2}
+\]</span></p>
+<hr />
+<div class="sourceCode" id="cb24"><pre class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb24-1"><a href="markdown.html#cb24-1" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb24-2"><a href="markdown.html#cb24-2" aria-hidden="true" tabindex="-1"></a>\begin{aligned} </span>
+<span id="cb24-3"><a href="markdown.html#cb24-3" aria-hidden="true" tabindex="-1"></a>  g(\mu) &amp; = \eta(x)<span class="sc">\\</span></span>
+<span id="cb24-4"><a href="markdown.html#cb24-4" aria-hidden="true" tabindex="-1"></a>  \eta(X) &amp; = \alpha+\beta x</span>
+<span id="cb24-5"><a href="markdown.html#cb24-5" aria-hidden="true" tabindex="-1"></a>  \end{aligned}  \tag{2}</span>
+<span id="cb24-6"><a href="markdown.html#cb24-6" aria-hidden="true" tabindex="-1"></a>$$</span></code></pre></div>
+<p>结果显示为
+<span class="math display">\[
+\begin{aligned} 
+  g(\mu) &amp; = \eta(x)\\
+  \eta(X) &amp; = \alpha+\beta x
+  \end{aligned}  \tag{2}
+\]</span></p>
+<hr />
+<div class="sourceCode" id="cb25"><pre class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb25-1"><a href="markdown.html#cb25-1" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb25-2"><a href="markdown.html#cb25-2" aria-hidden="true" tabindex="-1"></a>X = \begin{bmatrix}1 &amp; x_{1}<span class="sc">\\</span></span>
+<span id="cb25-3"><a href="markdown.html#cb25-3" aria-hidden="true" tabindex="-1"></a>1 &amp; x_{2}<span class="sc">\\</span></span>
+<span id="cb25-4"><a href="markdown.html#cb25-4" aria-hidden="true" tabindex="-1"></a>1 &amp; x_{3}  \tag{4}</span>
+<span id="cb25-5"><a href="markdown.html#cb25-5" aria-hidden="true" tabindex="-1"></a>\end{bmatrix}</span>
+<span id="cb25-6"><a href="markdown.html#cb25-6" aria-hidden="true" tabindex="-1"></a>$$</span></code></pre></div>
+<p>结果显示为
+<span class="math display">\[
+X = \begin{bmatrix}1 &amp; x_{1}\\
+1 &amp; x_{2}\\
+1 &amp; x_{3}  \tag{4}
+\end{bmatrix}
+\]</span></p></li>
+<li><p>用<code>\tag</code>命令人为编号比较简单易用， 但是在有大量公式需要编号时就很不方便， 只要增加了一个公式就需要人为地重新编号并修改相应的引用。<code>bookdown</code>包支持对公式自动编号， 并可以按公式标签引用公式， 引用带有超链接。具体见 §<a href="#bookdown-math"><strong>??</strong></a>.</p></li>
+</ul>
+</div>
+<div id="代码块-code-chunks" class="section level2" number="1.6">
+<h2><span class="header-section-number">1.6</span> 代码块 (Code chunks)</h2>
+<ul>
+<li><p>行内代码</p>
+<div class="sourceCode" id="cb26"><pre class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb26-1"><a href="markdown.html#cb26-1" aria-hidden="true" tabindex="-1"></a>Add file with <span class="in">`git add`</span></span></code></pre></div>
+<p>渲染结果:
+Add file with <code>git add</code></p></li>
+<li><p>单独代码</p>
+<div class="sourceCode" id="cb27"><pre class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb27-1"><a href="markdown.html#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="in">```bash</span></span>
+<span id="cb27-2"><a href="markdown.html#cb27-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> status</span>
+<span id="cb27-3"><a href="markdown.html#cb27-3" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit</span>
+<span id="cb27-4"><a href="markdown.html#cb27-4" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code></pre></div>
+<p>渲染结果:</p>
+<div class="sourceCode" id="cb28"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb28-1"><a href="markdown.html#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> status</span>
+<span id="cb28-2"><a href="markdown.html#cb28-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit</span></code></pre></div></li>
+<li><p>若代码中要显示斜引号本身，则需要用更多的斜引号括起来，最多含有n个不连续的斜引号要用n+1对斜引号括起来，n+1对斜引号与文本中间用空格分隔</p>
+<ul>
+<li>为了显示<code>```code```</code>，我们的代码应该为 <code>```` ```code``` ````</code></li>
+<li>为了显示<code>`隔断``中间文本``隔断`</code>，我们的代码应该为<code>``` `隔断``中间文本``隔断` ```</code></li>
+</ul></li>
+<li><p>如果文本中没有斜引号，用多个斜引号括起来也可以，只要前后个数相同，且都在一行之内，效果与前后用一个斜引号相同。</p></li>
+<li><p>为了显示</p></li>
+</ul>
+<div class="sourceCode" id="cb29"><pre class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb29-1"><a href="markdown.html#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="in">```bash</span></span>
+<span id="cb29-2"><a href="markdown.html#cb29-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push</span>
+<span id="cb29-3"><a href="markdown.html#cb29-3" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code></pre></div>
+<p>代码为</p>
+<div class="sourceCode" id="cb30"><pre class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb30-1"><a href="markdown.html#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="in">````markdown</span></span>
+<span id="cb30-2"><a href="markdown.html#cb30-2" aria-hidden="true" tabindex="-1"></a><span class="in">```bash</span></span>
+<span id="cb30-3"><a href="markdown.html#cb30-3" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push</span>
+<span id="cb30-4"><a href="markdown.html#cb30-4" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb30-5"><a href="markdown.html#cb30-5" aria-hidden="true" tabindex="-1"></a><span class="in">````</span></span></code></pre></div>
+</div>
+<div id="表格-tables" class="section level2" number="1.7">
+<h2><span class="header-section-number">1.7</span> 表格 (Tables)</h2>
+<ul>
+<li><p>Example 1</p>
+<div class="sourceCode" id="cb31"><pre class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb31-1"><a href="markdown.html#cb31-1" aria-hidden="true" tabindex="-1"></a>| Gender    | Age   | Major  |</span>
+<span id="cb31-2"><a href="markdown.html#cb31-2" aria-hidden="true" tabindex="-1"></a>| --------- |-------| ----- |</span>
+<span id="cb31-3"><a href="markdown.html#cb31-3" aria-hidden="true" tabindex="-1"></a>| M         |18     | Statistics|</span>
+<span id="cb31-4"><a href="markdown.html#cb31-4" aria-hidden="true" tabindex="-1"></a>| F         | 19    |   Math |</span></code></pre></div>
+<table>
+<thead>
+<tr class="header">
+<th>Gender</th>
+<th>Age</th>
+<th>Major</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>M</td>
+<td>18</td>
+<td>Statistics</td>
+</tr>
+<tr class="even">
+<td>F</td>
+<td>19</td>
+<td>Math</td>
+</tr>
+</tbody>
+</table></li>
+<li><p>Example 2</p>
+<div class="sourceCode" id="cb32"><pre class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb32-1"><a href="markdown.html#cb32-1" aria-hidden="true" tabindex="-1"></a><span class="co">-------------------------------------------------------------</span></span>
+<span id="cb32-2"><a href="markdown.html#cb32-2" aria-hidden="true" tabindex="-1"></a><span class="co"> Centered   Default           Right Left</span></span>
+<span id="cb32-3"><a href="markdown.html#cb32-3" aria-hidden="true" tabindex="-1"></a><span class="co">  Header    Aligned         Aligned Aligned</span></span>
+<span id="cb32-4"><a href="markdown.html#cb32-4" aria-hidden="true" tabindex="-1"></a><span class="co">---</span>-------- ------- --------------- -------------------------</span>
+<span id="cb32-5"><a href="markdown.html#cb32-5" aria-hidden="true" tabindex="-1"></a>   First    row                12.0 Example of a row that</span>
+<span id="cb32-6"><a href="markdown.html#cb32-6" aria-hidden="true" tabindex="-1"></a>                                    spans multiple lines.</span>
+<span id="cb32-7"><a href="markdown.html#cb32-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb32-8"><a href="markdown.html#cb32-8" aria-hidden="true" tabindex="-1"></a>  Second    row                 5.0 Here&#39;s another one. Note</span>
+<span id="cb32-9"><a href="markdown.html#cb32-9" aria-hidden="true" tabindex="-1"></a>                                    the blank line between</span>
+<span id="cb32-10"><a href="markdown.html#cb32-10" aria-hidden="true" tabindex="-1"></a>                                    rows.</span>
+<span id="cb32-11"><a href="markdown.html#cb32-11" aria-hidden="true" tabindex="-1"></a>-------------------------------------------------------------</span>
+<span id="cb32-12"><a href="markdown.html#cb32-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb32-13"><a href="markdown.html#cb32-13" aria-hidden="true" tabindex="-1"></a>Table: Here&#39;s the caption. It, too, may span</span>
+<span id="cb32-14"><a href="markdown.html#cb32-14" aria-hidden="true" tabindex="-1"></a>multiple lines.</span></code></pre></div>
+<table style="width:86%;">
+<caption>Here’s the caption. It, too, may span
+multiple lines.</caption>
+<colgroup>
+<col width="16%" />
+<col width="11%" />
+<col width="22%" />
+<col width="36%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="center">Centered
+Header</th>
+<th>Default
+Aligned</th>
+<th align="right">Right
+Aligned</th>
+<th align="left">Left
+Aligned</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">First</td>
+<td>row</td>
+<td align="right">12.0</td>
+<td align="left">Example of a row that
+spans multiple lines.</td>
+</tr>
+<tr class="even">
+<td align="center">Second</td>
+<td>row</td>
+<td align="right">5.0</td>
+<td align="left">Here’s another one. Note
+the blank line between
+rows.</td>
+</tr>
+</tbody>
+</table></li>
+<li><p>Example 3</p>
+<div class="sourceCode" id="cb33"><pre class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb33-1"><a href="markdown.html#cb33-1" aria-hidden="true" tabindex="-1"></a>+---------------+---------------+--------------------+</span>
+<span id="cb33-2"><a href="markdown.html#cb33-2" aria-hidden="true" tabindex="-1"></a>| Fruit         | Price         | Advantages         |</span>
+<span id="cb33-3"><a href="markdown.html#cb33-3" aria-hidden="true" tabindex="-1"></a>+===============+===============+====================+</span>
+<span id="cb33-4"><a href="markdown.html#cb33-4" aria-hidden="true" tabindex="-1"></a>| Bananas       | $1.34         | - built-in wrapper |</span>
+<span id="cb33-5"><a href="markdown.html#cb33-5" aria-hidden="true" tabindex="-1"></a>|               |               | - bright color     |</span>
+<span id="cb33-6"><a href="markdown.html#cb33-6" aria-hidden="true" tabindex="-1"></a>+---------------+---------------+--------------------+</span>
+<span id="cb33-7"><a href="markdown.html#cb33-7" aria-hidden="true" tabindex="-1"></a>| Oranges       | $2.10         | - cures scurvy     |</span>
+<span id="cb33-8"><a href="markdown.html#cb33-8" aria-hidden="true" tabindex="-1"></a>|               |               | - tasty            |</span>
+<span id="cb33-9"><a href="markdown.html#cb33-9" aria-hidden="true" tabindex="-1"></a>+---------------+---------------+--------------------+</span></code></pre></div>
+<table style="width:74%;">
+<colgroup>
+<col width="22%" />
+<col width="22%" />
+<col width="29%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Fruit</th>
+<th>Price</th>
+<th>Advantages</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Bananas</td>
+<td>$1.34</td>
+<td><ul>
+<li>built-in wrapper</li>
+<li>bright color</li>
+</ul></td>
+</tr>
+<tr class="even">
+<td>Oranges</td>
+<td>$2.10</td>
+<td><ul>
+<li>cures scurvy</li>
+<li>tasty</li>
+</ul></td>
+</tr>
+</tbody>
+</table></li>
+</ul>
+</div>
+<div id="图片-image" class="section level2" number="1.8">
+<h2><span class="header-section-number">1.8</span> 图片 (Image)</h2>
+<ul>
+<li><p>插入图片的基本语法:</p>
+<div class="sourceCode" id="cb34"><pre class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb34-1"><a href="markdown.html#cb34-1" aria-hidden="true" tabindex="-1"></a><span class="al">![](图片链接或者本地位置)</span></span></code></pre></div></li>
+<li><p>设置图片大小</p>
+<div class="sourceCode" id="cb35"><pre class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb35-1"><a href="markdown.html#cb35-1" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;img</span><span class="ot"> src</span> <span class="ot">=</span> <span class="st">&#39;&#39;</span><span class="ot"> alt</span> <span class="ot">=</span> <span class="st">&#39;&#39;</span><span class="ot"> height</span> <span class="ot">=</span> <span class="st">50%</span><span class="ot"> width</span> <span class="ot">=</span> <span class="st">50%</span> <span class="kw">/&gt;</span></span></code></pre></div>
+<p>常用的一些参数:</p>
+<table>
+<thead>
+<tr class="header">
+<th>属性</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>alt</td>
+<td>图像替代文本</td>
+</tr>
+<tr class="even">
+<td>src</td>
+<td>图片链接或者本地地址</td>
+</tr>
+<tr class="odd">
+<td>height</td>
+<td>图片高度,单位可以是%或者pixel</td>
+</tr>
+<tr class="even">
+<td>width</td>
+<td>图片宽度,单位可以是%或者pixel</td>
+</tr>
+<tr class="odd">
+<td>align</td>
+<td>图片位置,只支持left或者right</td>
+</tr>
+</tbody>
+</table></li>
+<li><p>图片默认是靠左对齐.如果想要居中,需要使用<code>&lt;p&gt;</code>标签,也就是段落.</p>
+<div class="sourceCode" id="cb36"><pre class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb36-1"><a href="markdown.html#cb36-1" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;p</span><span class="ot"> align</span> <span class="ot">=</span> <span class="st">&quot;center&quot;</span><span class="kw">&gt;</span></span>
+<span id="cb36-2"><a href="markdown.html#cb36-2" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;img</span><span class="ot"> src</span> <span class="ot">=</span> <span class="st">&#39;&#39;</span><span class="ot"> alt</span> <span class="ot">=</span> <span class="st">&#39;&#39;</span><span class="ot"> height</span> <span class="ot">=</span> <span class="st">50%</span><span class="ot"> width</span> <span class="ot">=</span> <span class="st">50%</span> <span class="kw">/&gt;</span></span>
+<span id="cb36-3"><a href="markdown.html#cb36-3" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;/p&gt;</span></span></code></pre></div></li>
+</ul>
+</div>
+<div id="插入icon" class="section level2" number="1.9">
+<h2><span class="header-section-number">1.9</span> 插入icon</h2>
+<p>可以插入符号工具包<code>Font Awesome</code>.一般的markdown编辑器都已经支持直接使用HTML插入icon.</p>
+<p>比如插入微信图标:</p>
+<div class="sourceCode" id="cb37"><pre class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb37-1"><a href="markdown.html#cb37-1" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;i</span><span class="ot"> class=</span><span class="st">&quot;fa fa-weixin&quot;</span><span class="kw">&gt;&lt;/i&gt;</span></span></code></pre></div>
+<p><i class="fa fa-weixin"></i></p>
+<p>如果不支持,可以在markdown的最底端插入下面的代码:</p>
+<div class="sourceCode" id="cb38"><pre class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb38-1"><a href="markdown.html#cb38-1" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;head&gt;</span> </span>
+<span id="cb38-2"><a href="markdown.html#cb38-2" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;script</span><span class="ot"> defer src=</span><span class="st">&quot;https://use.fontawesome.com/releases/v5.0.13/js/all.js&quot;</span><span class="kw">&gt;&lt;/script&gt;</span> </span>
+<span id="cb38-3"><a href="markdown.html#cb38-3" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;script</span><span class="ot"> defer src=</span><span class="st">&quot;https://use.fontawesome.com/releases/v5.0.13/js/v4-shims.js&quot;</span><span class="kw">&gt;&lt;/script&gt;</span> </span>
+<span id="cb38-4"><a href="markdown.html#cb38-4" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;/head&gt;</span> </span>
+<span id="cb38-5"><a href="markdown.html#cb38-5" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;link</span><span class="ot"> rel=</span><span class="st">&quot;stylesheet&quot;</span><span class="ot"> href=</span><span class="st">&quot;https://use.fontawesome.com/releases/v5.0.13/css/all.css&quot;</span><span class="kw">&gt;</span></span></code></pre></div>
+<p>当然也可以使用HTML的<code>&lt;a&gt;</code>标签让icon绑定一个超链接.</p>
+<div class="sourceCode" id="cb39"><pre class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb39-1"><a href="markdown.html#cb39-1" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;a</span><span class="ot"> href=</span><span class="st">&quot;https://guangyuzhu.rbind.io&quot;</span><span class="kw">&gt;&lt;i</span><span class="ot"> class=</span><span class="st">&quot;fa fa-weixin&quot;</span><span class="kw">&gt;&lt;/i&gt;&lt;/a&gt;</span></span></code></pre></div>
+<p><a href="https://guangyuzhu.rbind.io"><i class="fa fa-weixin"></i></a></p>
+</div>
+<div id="视频-video和音乐-music" class="section level2" number="1.10">
+<h2><span class="header-section-number">1.10</span> 视频 (Video)和音乐 (music)</h2>
+<div id="本地视频" class="section level3" number="1.10.1">
+<h3><span class="header-section-number">1.10.1</span> 本地视频</h3>
+<div class="sourceCode" id="cb40"><pre class="sourceCode html"><code class="sourceCode html"><span id="cb40-1"><a href="markdown.html#cb40-1" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;div</span><span class="ot"> class=</span><span class="st">&quot;embed-responsive embed-responsive-16by9&quot;</span><span class="kw">&gt;</span></span>
+<span id="cb40-2"><a href="markdown.html#cb40-2" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;video</span><span class="ot"> width=</span><span class="st">&quot;70%&quot;</span><span class="ot"> controls</span><span class="kw">&gt;</span></span>
+<span id="cb40-3"><a href="markdown.html#cb40-3" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;source</span><span class="ot"> src=</span><span class="st">&quot;videos/Cherry Blossom.mp4&quot;</span><span class="ot"> type=</span><span class="st">&quot;video/mp4&quot;</span><span class="kw">&gt;</span></span>
+<span id="cb40-4"><a href="markdown.html#cb40-4" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;/video&gt;</span></span>
+<span id="cb40-5"><a href="markdown.html#cb40-5" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;/div&gt;</span></span></code></pre></div>
+<div class="embed-responsive embed-responsive-16by9">
+<video width="70%" controls>
+<source src="videos/Cherry Blossom.mp4" type="video/mp4">
+</video>
+</div>
+</div>
+<div id="本地音频" class="section level3" number="1.10.2">
+<h3><span class="header-section-number">1.10.2</span> 本地音频</h3>
+<div class="sourceCode" id="cb41"><pre class="sourceCode html"><code class="sourceCode html"><span id="cb41-1"><a href="markdown.html#cb41-1" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;figure&gt;</span></span>
+<span id="cb41-2"><a href="markdown.html#cb41-2" aria-hidden="true" tabindex="-1"></a>    <span class="co">&lt;!--&lt;figcaption&gt;Listen to :&lt;/figcaption&gt;--&gt;</span></span>
+<span id="cb41-3"><a href="markdown.html#cb41-3" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;audio</span><span class="ot"> controls loop autoplay</span><span class="kw">&gt;</span></span>
+<span id="cb41-4"><a href="markdown.html#cb41-4" aria-hidden="true" tabindex="-1"></a>        <span class="kw">&lt;source</span><span class="ot"> src=</span><span class="st">&quot;audios/Primrose, the Dancer.m4a&quot;</span><span class="ot">  type=</span><span class="st">&quot;audio/mp3&quot;</span><span class="kw">&gt;</span>&gt;</span>
+<span id="cb41-5"><a href="markdown.html#cb41-5" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;/audio&gt;</span></span>
+<span id="cb41-6"><a href="markdown.html#cb41-6" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;/figure&gt;</span>   </span></code></pre></div>
+<figure>
+<!--<figcaption>Listen to :</figcaption>-->
+<audio controls>
+<source src="audios/Primrose, the Dancer.m4a"  type="audio/mp3">
+<blockquote>
+</audio>
+</figure>
+</blockquote>
+</div>
+<div id="embed-audio-from-soundcloud" class="section level3" number="1.10.3">
+<h3><span class="header-section-number">1.10.3</span> Embed audio from soundcloud</h3>
+<p><a href="https://soundcloud.com/">Soundcloud</a></p>
+<div class="sourceCode" id="cb42"><pre class="sourceCode html"><code class="sourceCode html"><span id="cb42-1"><a href="markdown.html#cb42-1" aria-hidden="true" tabindex="-1"></a><span class="co">&lt;!-- I changed the code to make it minimal --&gt;</span></span>
+<span id="cb42-2"><a href="markdown.html#cb42-2" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;iframe</span><span class="ot"> width=</span><span class="st">&quot;50%&quot;</span><span class="ot"> height=</span><span class="st">&quot;66&quot;</span> </span>
+<span id="cb42-3"><a href="markdown.html#cb42-3" aria-hidden="true" tabindex="-1"></a><span class="ot">        scrolling=</span><span class="st">&quot;no&quot;</span><span class="ot"> frameborder=</span><span class="st">&quot;no&quot;</span> </span>
+<span id="cb42-4"><a href="markdown.html#cb42-4" aria-hidden="true" tabindex="-1"></a><span class="ot">        allow=</span><span class="st">&quot;autoplay&quot;</span> </span>
+<span id="cb42-5"><a href="markdown.html#cb42-5" aria-hidden="true" tabindex="-1"></a><span class="ot">        src=</span><span class="st">&quot;https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/471669768</span><span class="er">&amp;</span><span class="st">color=%23ff5500</span><span class="er">&amp;</span><span class="st">auto_play=false</span><span class="er">&amp;</span><span class="st">hide_related=true</span><span class="er">&amp;</span><span class="st">show_comments=false</span><span class="er">&amp;</span><span class="st">show_user=false</span><span class="er">&amp;</span><span class="st">show_reposts=false</span><span class="er">&amp;</span><span class="st">show_teaser=false&quot;</span><span class="kw">&gt;</span></span>
+<span id="cb42-6"><a href="markdown.html#cb42-6" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;/iframe&gt;</span></span></code></pre></div>
+<!-- I changed the code to make it minimal -->
+<iframe width="50%" height="66" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/471669768&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_user=false&amp;show_reposts=false&amp;show_teaser=false">
+</iframe>
+</div>
+</div>
+<div id="添加附件" class="section level2" number="1.11">
+<h2><span class="header-section-number">1.11</span> 添加附件</h2>
+<p>用HTML语法实现：</p>
+<div class="sourceCode" id="cb43"><pre class="sourceCode html"><code class="sourceCode html"><span id="cb43-1"><a href="markdown.html#cb43-1" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;a</span><span class="ot"> href=</span><span class="st">&quot;data/AZT.Rdata&quot;</span><span class="ot"> download=</span><span class="st">&quot;AZT.Rdata&quot;</span><span class="kw">&gt;</span>点击下载附件 *AZT.Rdata*<span class="kw">&lt;/a&gt;</span></span></code></pre></div>
+<p>效果为</p>
+<p><a href="data/AZT.Rdata" download="AZT.Rdata">点击下载附件 <em>AZT.Rdata</em></a></p>
+
+</div>
+</div>
+
+
+
+
+
+
+<div class="footnotes">
+<hr />
+<ol start="1">
+<li id="fn1"><p>This is a footnote.<a href="markdown.html#fnref1" class="footnote-back">↩︎</a></p></li>
+</ol>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="index.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
+    </div>
+  </div>
+<script src="libs/gitbook/js/app.min.js"></script>
+<script src="libs/gitbook/js/lunr.js"></script>
+<script src="libs/gitbook/js/clipboard.min.js"></script>
+<script src="libs/gitbook/js/plugin-search.js"></script>
+<script src="libs/gitbook/js/plugin-sharing.js"></script>
+<script src="libs/gitbook/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook/js/jquery.highlight.js"></script>
+<script src="libs/gitbook/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": true,
+"facebook": false,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "none"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

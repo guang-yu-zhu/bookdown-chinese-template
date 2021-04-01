@@ -1,0 +1,1137 @@
+\documentclass[]{ctexbook}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+\else % if luatex or xelatex
+  \ifxetex
+    \usepackage{xltxtra,xunicode}
+  \else
+    \usepackage{fontspec}
+  \fi
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+\fi
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+% use microtype if available
+\IfFileExists{microtype.sty}{%
+\usepackage{microtype}
+\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\usepackage[b5paper,tmargin=2.5cm,bmargin=2.5cm,lmargin=3.5cm,rmargin=2.5cm]{geometry}
+\usepackage[unicode=true]{hyperref}
+\PassOptionsToPackage{usenames,dvipsnames}{color} % color is loaded by hyperref
+\hypersetup{
+            pdftitle={中文书示例},
+            colorlinks=true,
+            linkcolor=Maroon,
+            citecolor=Blue,
+            urlcolor=Blue,
+            breaklinks=true}
+\urlstyle{same}  % don't use monospace font for urls
+\usepackage{natbib}
+\bibliographystyle{apalike}
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{248,248,248}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.77,0.63,0.00}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\BuiltInTok}[1]{#1}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ImportTok}[1]{#1}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\usepackage{longtable,booktabs}
+% Fix footnotes in tables (requires footnote package)
+\IfFileExists{footnote.sty}{\usepackage{footnote}\makesavenoteenv{long table}}{}
+\usepackage[normalem]{ulem}
+% avoid problems with \sout in headers with hyperref:
+\pdfstringdefDisableCommands{\renewcommand{\sout}{}}
+\IfFileExists{parskip.sty}{%
+\usepackage{parskip}
+}{% else
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{5}
+% Redefines (sub)paragraphs to behave more like sections
+\ifx\paragraph\undefined\else
+\let\oldparagraph\paragraph
+\renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+\let\oldsubparagraph\subparagraph
+\renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+
+% set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+
+\usepackage{booktabs}
+\usepackage{longtable}
+
+\usepackage{framed,color}
+\definecolor{shadecolor}{RGB}{248,248,248}
+
+\renewcommand{\textfraction}{0.05}
+\renewcommand{\topfraction}{0.8}
+\renewcommand{\bottomfraction}{0.8}
+\renewcommand{\floatpagefraction}{0.75}
+
+\let\oldhref\href
+\renewcommand{\href}[2]{#2\footnote{\url{#1}}}
+
+\makeatletter
+\newenvironment{kframe}{%
+\medskip{}
+\setlength{\fboxsep}{.8em}
+ \def\at@end@of@kframe{}%
+ \ifinner\ifhmode%
+  \def\at@end@of@kframe{\end{minipage}}%
+  \begin{minipage}{\columnwidth}%
+ \fi\fi%
+ \def\FrameCommand##1{\hskip\@totalleftmargin \hskip-\fboxsep
+ \colorbox{shadecolor}{##1}\hskip-\fboxsep
+     % There is no \\@totalrightmargin, so:
+     \hskip-\linewidth \hskip-\@totalleftmargin \hskip\columnwidth}%
+ \MakeFramed {\advance\hsize-\width
+   \@totalleftmargin\z@ \linewidth\hsize
+   \@setminipage}}%
+ {\par\unskip\endMakeFramed%
+ \at@end@of@kframe}
+\makeatother
+
+\makeatletter
+\@ifundefined{Shaded}{
+}{\renewenvironment{Shaded}{\begin{kframe}}{\end{kframe}}}
+\@ifpackageloaded{fancyvrb}{%
+  % https://github.com/CTeX-org/ctex-kit/issues/331
+  \RecustomVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\},formatcom=\xeCJKVerbAddon}%
+}{}
+\makeatother
+
+\usepackage{makeidx}
+\makeindex
+
+\urlstyle{tt}
+
+\usepackage{amsthm}
+\makeatletter
+\def\thm@space@setup{%
+  \thm@preskip=8pt plus 2pt minus 4pt
+  \thm@postskip=\thm@preskip
+}
+\makeatother
+
+\frontmatter
+
+\title{中文书示例}
+\date{2021-04-01}
+
+\begin{document}
+\maketitle
+
+
+\thispagestyle{empty}
+
+\begin{center}
+献给……
+
+呃，爱谁谁吧
+\end{center}
+
+\setlength{\abovedisplayskip}{-5pt}
+\setlength{\abovedisplayshortskip}{-5pt}
+
+{
+\setcounter{tocdepth}{2}
+\tableofcontents
+}
+\listoftables
+\listoffigures
+\hypertarget{ux524dux8a00}{%
+\chapter*{前言}\label{ux524dux8a00}}
+
+
+第 \ref{markdown} 章是关于
+
+\begin{flushright}
+于 R 村某角落
+\end{flushright}
+
+\hypertarget{markdown}{%
+\chapter{Markdown}\label{markdown}}
+
+\texttt{Markdown}的基础语法:
+
+\hypertarget{comment}{%
+\section{Markdown 的注释}\label{comment}}
+
+\begin{itemize}
+\tightlist
+\item
+  文本注释：依然可使用Ctrl+Shift+C的快捷键，其结果为在待注释的文本前添加\texttt{\textless{}!-\/-}，在其后添加\texttt{-\/-\textgreater{}}
+\item
+  R代码注释：无论是行内代码还是代码块，对于代码正文（不包括前后的斜引号及大括号里面的内容）来说，依然可使用Ctrl+Shift+C的快捷键，其结果与普通R脚本中的注释相同，为在待注释的文本前加井号\texttt{\#}
+\end{itemize}
+
+\hypertarget{ux6807ux9898ux548cux6bb5ux843d}{%
+\section{标题和段落}\label{ux6807ux9898ux548cux6bb5ux843d}}
+
+\hypertarget{ux6807ux9898-header}{%
+\subsection{标题 (Header)}\label{ux6807ux9898-header}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{\# 一级标题}
+\FunctionTok{\#\# 二级标题}
+\FunctionTok{\#\#\# 三级标题}
+\FunctionTok{\#\#\#\# 四级标题}
+\FunctionTok{\#\#\#\#\# 五级标题}
+\FunctionTok{\#\#\#\#\#\# 六级标题}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{ux6c34ux5e73ux7ebf-horizontal-rule}{%
+\subsection{水平线 (Horizontal rule)}\label{ux6c34ux5e73ux7ebf-horizontal-rule}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{***}
+\NormalTok{{-}{-}{-}}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{ux5f3aux8c03-emphasize}{%
+\subsection{强调 (Emphasize)}\label{ux5f3aux8c03-emphasize}}
+
+\begin{itemize}
+\item
+  加粗和斜体
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{*这是斜体*}
+\NormalTok{\_这也是斜体\_}
+\NormalTok{**这是粗体**}
+\NormalTok{\_\_这也是粗体\_\_}
+\NormalTok{***这是粗体也是斜体***}
+\NormalTok{\_\_\_这是粗体也是斜体\_\_\_}
+\end{Highlighting}
+\end{Shaded}
+
+  \emph{这是斜体}
+
+  \emph{这也是斜体}
+
+  \textbf{这是粗体}
+
+  \textbf{这也是粗体}
+
+  \textbf{\emph{这是粗体也是斜体}}
+
+  \textbf{\emph{这是粗体也是斜体}}
+\item
+  删除线
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{\textasciitilde{}\textasciitilde{}删除这句话\textasciitilde{}\textasciitilde{}}
+\end{Highlighting}
+\end{Shaded}
+
+  \sout{删除这句话}
+\end{itemize}
+
+\hypertarget{ux6587ux5b57}{%
+\subsection{文字}\label{ux6587ux5b57}}
+
+\hypertarget{ux5b57ux4f53}{%
+\subsubsection{字体}\label{ux5b57ux4f53}}
+
+\begin{itemize}
+\item
+  \texttt{\textless{}span\ style="font-family:宋体;"\textgreater{}宋体\textless{}/span\textgreater{}}显示为{宋体},\\
+\item
+  \texttt{\textless{}span\ style="font-family:Times\ New\ Roman;"\textgreater{}Times\ New\ Roman\textless{}/span\textgreater{}}显示为{Times New
+  Roman}
+\item
+  \texttt{\textless{}span\ style="font-variant:small-caps;"\textgreater{}Small\ Caps\textless{}/span\textgreater{}} 显示为 \textsc{Small Caps}
+  \#\#\#\# 字号
+\item
+  \texttt{\textless{}span\ style="font-size:25px;"\textgreater{}字号25px\textless{}/span\textgreater{}}显示为 {字号25px}
+\end{itemize}
+
+\hypertarget{ux6587ux5b57ux989cux8272}{%
+\subsubsection{文字颜色}\label{ux6587ux5b57ux989cux8272}}
+
+\begin{itemize}
+\tightlist
+\item
+  \texttt{\textless{}span\ style="color:red;"\textgreater{}红色文字\textless{}/span\textgreater{}}显示为{红色文字}，
+\item
+  \texttt{\textless{}span\ style="color:\#33C0FF;"\textgreater{}文字色号\#33C0FF\textless{}/span\textgreater{}}显示为 {文字色号\#33C0FF}
+\end{itemize}
+
+\hypertarget{ux80ccux666fux989cux8272}{%
+\subsubsection{背景颜色}\label{ux80ccux666fux989cux8272}}
+
+\begin{itemize}
+\tightlist
+\item
+  \texttt{\textless{}span\ style="background-color:yellow;"\textgreater{}背景为黄色\textless{}/span\textgreater{}}显示为{背景为黄色}
+\item
+  \texttt{\textless{}span\ style="background-color:\#33FF8B;"\textgreater{}背景色号为\#33FF8B\textless{}/span\textgreater{}}显示为{背景色号为\#33FF8B}
+\end{itemize}
+
+\hypertarget{ux5212ux7ebf}{%
+\subsubsection{划线}\label{ux5212ux7ebf}}
+
+\begin{itemize}
+\item
+  \texttt{\textless{}span\ style="text-decoration:\ underline;"\textgreater{}下划线\textless{}/span\textgreater{}}显示为{下划线}
+\item
+  \texttt{\textless{}span\ style="text-decoration:\ line-through;"\textgreater{}删除线\textless{}/span\textgreater{}}显示为{删除线}
+\item
+  \texttt{\textless{}span\ style="text-decoration:\ overline;"\textgreater{}上划线\textless{}/span\textgreater{}}显示为{上划线}
+\end{itemize}
+
+\hypertarget{ux5b57ux4f53ux989cux8272ux4e5fux53efux4ee5ux4f7fux7528fontux6807ux7b7eux5b9eux73b0.}{%
+\subsubsection{\texorpdfstring{字体颜色也可以使用\texttt{\textless{}font\textgreater{}}标签实现.}{字体颜色也可以使用\textless font\textgreater 标签实现.}}\label{ux5b57ux4f53ux989cux8272ux4e5fux53efux4ee5ux4f7fux7528fontux6807ux7b7eux5b9eux73b0.}}
+
+\texttt{\textless{}font\ color="blue"\textgreater{}这段话使用蓝色字体.\textless{}/font\textgreater{}} 显示为 这段话使用蓝色字体.
+
+\texttt{\textless{}font\textgreater{}}标签常用属性:
+
+\begin{longtable}[]{@{}ll@{}}
+\toprule
+属性 & 描述\tabularnewline
+\midrule
+\endhead
+color & 颜色\tabularnewline
+face & 字体\tabularnewline
+size & 字体大小\tabularnewline
+\bottomrule
+\end{longtable}
+
+\hypertarget{ux6bb5ux843d}{%
+\subsection{段落}\label{ux6bb5ux843d}}
+
+\begin{itemize}
+\item
+  一个段落由一行或连续的多行组成。
+\item
+  段落之间以空行分隔。
+\item
+  同一段落内的不同行在转换成HTML或docx等格式后会重新排列，原来的段内换行被当成了空格，这样的规定与LaTeX类似。
+\item
+  普通段落不该用空格或制表符来缩进， 不应在行尾留有空格。
+\item
+  为了在段内换行并且转化后仍保持段内换行， 输入时在前面行的末尾输入两个或两个以上空格。例如：
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{白日依山尽，黄河入海流。    }
+\NormalTok{欲穷千里目，更上一层楼。}
+\end{Highlighting}
+\end{Shaded}
+
+  显示为：
+
+  白日依山尽，黄河入海流。\\
+  欲穷千里目，更上一层楼。
+\item
+  这样做的缺点是末尾的空格是不可见的。 可以使用HTML的标签在段内换行，如：
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{白日依山尽，黄河入海流。}\KeywordTok{\textless{}br\textgreater{}}
+\NormalTok{欲穷千里目，更上一层楼。。}
+\end{Highlighting}
+\end{Shaded}
+
+  显示为：
+
+  白日依山尽，黄河入海流。
+  欲穷千里目，更上一层楼。
+\end{itemize}
+
+\hypertarget{ux6bb5ux843dux5bf9ux9f50ux548cux6bb5ux95f4ux8ddd}{%
+\subsection{段落对齐和段间距}\label{ux6bb5ux843dux5bf9ux9f50ux548cux6bb5ux95f4ux8ddd}}
+
+使用HTML\texttt{\textless{}p\textgreater{}}标签设置对齐和段间距.
+
+\begin{itemize}
+\item
+  对齐
+  对齐是\texttt{\textless{}p\textgreater{}}标签中的\texttt{align}属性.
+
+  \begin{longtable}[]{@{}ll@{}}
+  \toprule
+  属性 & 描述\tabularnewline
+  \midrule
+  \endhead
+  left & 左对齐\tabularnewline
+  right & 右对齐\tabularnewline
+  center & 居中对齐\tabularnewline
+  justify & 两端对齐\tabularnewline
+  \bottomrule
+  \end{longtable}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{\textless{}p}\OtherTok{ align} \OtherTok{=} \StringTok{"left"}\KeywordTok{\textgreater{}} 
+\KeywordTok{\textless{}/p\textgreater{}}
+\end{Highlighting}
+\end{Shaded}
+\item
+  行间距
+  使用\texttt{\textless{}p\textgreater{}}标签的\texttt{style}属性进行设置.
+  将\texttt{line-height}设置为\texttt{300\%}相当于是三倍行距.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{\textless{}p}\OtherTok{ align} \OtherTok{=} \StringTok{"justify"}\OtherTok{ style=}\StringTok{"line{-}height:300\%"}\KeywordTok{\textgreater{}} 
+\KeywordTok{\textless{}/p\textgreater{}}
+\end{Highlighting}
+\end{Shaded}
+\end{itemize}
+
+\hypertarget{ux5f15ux7528blockquotes}{%
+\subsection{引用(Blockquotes)}\label{ux5f15ux7528blockquotes}}
+
+\begin{itemize}
+\item
+  引用也是段落模式，内容中的换行不起作用，空行导致分段。
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\AttributeTok{\textgreater{} 白日依山尽，黄河入海流。}
+\AttributeTok{\textgreater{} 欲穷千里目，更上一层楼。}
+\end{Highlighting}
+\end{Shaded}
+
+  转换成
+
+  \begin{quote}
+  白日依山尽，黄河入海流。
+  欲穷千里目，更上一层楼。
+  \end{quote}
+\item
+  引用段落也可以仅在段落第一行写大于号， 其它行顶格写，例如下面的两段引用：
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\AttributeTok{\textgreater{} 远上寒山石径斜，}
+\AttributeTok{白云生处有人家。}
+\AttributeTok{\textgreater{}}
+\AttributeTok{\textgreater{} 停车坐爱枫林晚，}
+\AttributeTok{霜叶红于二月花。。}
+\end{Highlighting}
+\end{Shaded}
+
+  转换成
+
+  \begin{quote}
+  远上寒山石径斜，
+  白云生处有人家。
+
+  停车坐爱枫林晚，
+  霜叶红于二月花。
+  \end{quote}
+\item
+  为了在引用中换行，就需要加引用空行。为了排版诗、词之类的内容，希望人为控制换行和引导空格，可以将引用中的\texttt{\textgreater{}}替换成\texttt{\textbar{}}，如：
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{| 白日依山尽，}
+\NormalTok{| 黄河入海流。}
+\NormalTok{| 欲穷千里目，}
+\NormalTok{| 更上一层楼。}
+\end{Highlighting}
+\end{Shaded}
+
+  转换成
+
+  白日依山尽，\\
+  黄河入海流。\\
+  欲穷千里目，\\
+  更上一层楼。
+\item
+  引用内也可以嵌套其它的Markdown格式如标题、列表等。 引用前后应该有空行把引用内容与其他内容分隔开。
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\AttributeTok{\textgreater{} 例如}
+\AttributeTok{\textgreater{}}  
+\AttributeTok{\textgreater{} (1) 顶层一；}
+\AttributeTok{\textgreater{}     a) 内层1；}
+\AttributeTok{\textgreater{}     b) 内层2；}
+\AttributeTok{\textgreater{} (2) 顶层二。}
+\end{Highlighting}
+\end{Shaded}
+
+  转换成
+
+  \begin{quote}
+  例如
+
+  \begin{enumerate}
+  \def\labelenumi{(\arabic{enumi})}
+  \tightlist
+  \item
+    顶层一；
+
+    \begin{enumerate}
+    \def\labelenumii{\alph{enumii})}
+    \tightlist
+    \item
+      内层1；
+    \item
+      内层2；
+    \end{enumerate}
+  \item
+    顶层二。
+  \end{enumerate}
+  \end{quote}
+\end{itemize}
+
+\hypertarget{ux811aux6ce8}{%
+\subsection{脚注}\label{ux811aux6ce8}}
+
+Footnotes\footnote{This is a footnote.} are put inside the square brackets after a caret \texttt{\^{}{[}{]}}, e.g., \texttt{\^{}{[}This\ is\ a\ footnote.{]}}
+
+\hypertarget{ux5217ux8868-list}{%
+\section{列表 (List)}\label{ux5217ux8868-list}}
+
+\begin{itemize}
+\item
+  有序列表 (Ordered list)
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\SpecialStringTok{1. }\NormalTok{Item 1}
+\SpecialStringTok{1. }\NormalTok{Item 2}
+\SpecialStringTok{1. }\NormalTok{Item 3}
+\end{Highlighting}
+\end{Shaded}
+\item
+  无序列表 (Unordered list)
+  无需列表可以使用\texttt{*}或者\texttt{-}来创建.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\SpecialStringTok{* }\NormalTok{Item 1}
+\SpecialStringTok{* }\NormalTok{Item 2}
+\SpecialStringTok{  * }\NormalTok{Item 2.1}
+\SpecialStringTok{  * }\NormalTok{Item 2.2}
+\SpecialStringTok{* }\NormalTok{Item 3}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\SpecialStringTok{{-} }\NormalTok{Item 1}
+\SpecialStringTok{{-} }\NormalTok{Item 2}
+\SpecialStringTok{  {-} }\NormalTok{Item 2.1}
+\SpecialStringTok{  {-} }\NormalTok{Item 2.2}
+\SpecialStringTok{{-} }\NormalTok{Item 3}
+\end{Highlighting}
+\end{Shaded}
+\item
+  任务列表 (Task list)
+  有的markdown编辑器是支持任务列表的,比如github,但是有些也不支持.比如rmakdown就是不支持的(本书就是用rmakrdown写的).
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\SpecialStringTok{{-} }\VariableTok{[x]}\NormalTok{ Write the press release}
+\SpecialStringTok{{-} }\VariableTok{[ ]}\NormalTok{ Update the website}
+\SpecialStringTok{{-} }\VariableTok{[ ]}\NormalTok{ Contact the media}
+\end{Highlighting}
+\end{Shaded}
+\item
+  如果列表项目中有多个段落， 这时两个列表项之间应该以空行分隔， 每个项目除了第一行外，输入的每行内容都应该缩进4个空格或者一个制表符。
+\end{itemize}
+
+\hypertarget{ux94feux63a5-links}{%
+\section{链接 (Links)}\label{ux94feux63a5-links}}
+
+\begin{itemize}
+\item
+  \textbf{内部链接}
+  还有一种链接是内部链接，用于文内跳转。 在各级标题行的末尾， 可以添加\{\#自定义标签\}这样的内容， 其中``自定义标签''是自己写的一个标识符， 标识符仅使用英文字母、数字、下划线、减号， 用来区分不同的位置。 比如，本文第一章添加了\texttt{markdown}为标签， 就可以用 \texttt{{[}回到第一章{]}(\#markdown)} 产生链接 \protect\hyperlink{markdown}{回到第一章}。
+\item
+  直接写url
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{https://guangyuzhu.rbind.io/}
+\end{Highlighting}
+\end{Shaded}
+
+  \url{https://guangyuzhu.rbind.io/}
+\item
+  将网址超链接给某段文字
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{[}\OtherTok{我的网站}\CommentTok{](https://guangyuzhu.rbind.io/)}
+\end{Highlighting}
+\end{Shaded}
+
+  \href{https://yylm.rbind.io/}{我的网站}
+\item
+  HTML插入链接
+  使用\texttt{\textless{}a\textgreater{}}标签.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{\textless{}a}\OtherTok{ href=}\StringTok{"url"}\KeywordTok{\textgreater{}}\NormalTok{Link text}\KeywordTok{\textless{}/a\textgreater{}}
+\end{Highlighting}
+\end{Shaded}
+
+  \begin{longtable}[]{@{}ll@{}}
+  \toprule
+  属性 & 描述\tabularnewline
+  \midrule
+  \endhead
+  href & 链接网址url\tabularnewline
+  target & 在何处打开链接, \texttt{\_blank}, \texttt{\_parent}, \texttt{\_self}, \texttt{\_top}\tabularnewline
+  \bottomrule
+  \end{longtable}
+
+  比如我们插入一个网址,点击之后在新的网页打开.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{\textless{}a}\OtherTok{ href=}\StringTok{"https://guangyuzhu.rbind.io"}\OtherTok{ target} \OtherTok{=} \StringTok{\textquotesingle{}\_blank\textquotesingle{}}\KeywordTok{\textgreater{}}\NormalTok{我的网站}\KeywordTok{\textless{}/a\textgreater{}}\NormalTok{.}
+\end{Highlighting}
+\end{Shaded}
+
+  我的网站.
+\item
+  将超链接绑定在图片上
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{\textless{}a}\OtherTok{ href=}\StringTok{"https://guangyuzhu.rbind.io"}\OtherTok{ target} \OtherTok{=} \StringTok{\textquotesingle{}\_blank\textquotesingle{}}\KeywordTok{\textgreater{}}
+\KeywordTok{\textless{}img}\OtherTok{ src} \OtherTok{=} \StringTok{\textquotesingle{}figures/avatar.jpeg\textquotesingle{}}\OtherTok{ alt} \OtherTok{=} \StringTok{\textquotesingle{}Guangyu Zhu\textquotesingle{}}\OtherTok{ height} \OtherTok{=} \StringTok{50\%}\OtherTok{ width} \OtherTok{=} \StringTok{50\%} \KeywordTok{/\textgreater{}}
+\KeywordTok{\textless{}/a\textgreater{}}
+\end{Highlighting}
+\end{Shaded}
+
+  点击下图查看我的网站:
+\end{itemize}
+
+\hypertarget{markdown-math}{%
+\section{数学公式 (Equations)}\label{markdown-math}}
+
+\begin{itemize}
+\item
+  Inline LaTeX equations can be written in a pair of dollar signs using the LaTeX syntax, e.g., \texttt{\$f(k)\ =\ \{n\ \textbackslash{}choose\ k\}\ p\^{}\{k\}\ (1-p)\^{}\{n-k\}\$} (actual output: \(f(k) = {n \choose k} p^{k} (1-p)^{n-k}\))
+\item
+  math expressions of the display style can be written in a pair of double dollar signs, e.g., \texttt{\$\$Y=X\textbackslash{}beta+\textbackslash{}epsilon\$\$}, and the output looks like this:
+  \[Y=X\beta+\epsilon\]
+\item
+  用\texttt{\$\$}符号在两端界定的公式后面， 可以用\texttt{\textbackslash{}tag\{标号\}}命令增加人为的公式编号，如
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{$$}
+\NormalTok{Y=X\textbackslash{}beta+\textbackslash{}epsilon \textbackslash{}tag\{1\}}
+\NormalTok{$$}
+\end{Highlighting}
+\end{Shaded}
+
+  结果显示为
+  \[
+  Y=X\beta+\epsilon \tag{1}
+  \]
+\end{itemize}
+
+\begin{itemize}
+\item
+  要注意的是， \texttt{\textbackslash{}tag\{标号\}}命令一个公式只能用一个，这样多行的公式将不能为每行编号。例如,
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{$$f(k;p\_0\^{}*) = }
+\NormalTok{\textbackslash{}begin\{cases\} p\_0\^{}* \& \textbackslash{}text\{if \}k=1, }\SpecialCharTok{\textbackslash{}\textbackslash{}}
+\NormalTok{1{-}p\_0\^{}* \& \textbackslash{}text \{if \}k=0.\textbackslash{}end\{cases\}  \textbackslash{}tag\{2\}}
+\NormalTok{$$}
+\end{Highlighting}
+\end{Shaded}
+
+  结果显示为
+  \[f(k;p_0^*) = 
+  \begin{cases} p_0^* & \text{if }k=1, \\
+  1-p_0^* & \text {if }k=0.\end{cases}  \tag{2}
+  \]
+
+  \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{$$}
+\NormalTok{\textbackslash{}begin\{aligned\} }
+\NormalTok{  g(\textbackslash{}mu) \& = \textbackslash{}eta(x)}\SpecialCharTok{\textbackslash{}\textbackslash{}}
+\NormalTok{  \textbackslash{}eta(X) \& = \textbackslash{}alpha+\textbackslash{}beta x}
+\NormalTok{  \textbackslash{}end\{aligned\}  \textbackslash{}tag\{2\}}
+\NormalTok{$$}
+\end{Highlighting}
+\end{Shaded}
+
+  结果显示为
+  \[
+  \begin{aligned} 
+    g(\mu) & = \eta(x)\\
+    \eta(X) & = \alpha+\beta x
+    \end{aligned}  \tag{2}
+  \]
+
+  \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{$$}
+\NormalTok{X = \textbackslash{}begin\{bmatrix\}1 \& x\_\{1\}}\SpecialCharTok{\textbackslash{}\textbackslash{}}
+\NormalTok{1 \& x\_\{2\}}\SpecialCharTok{\textbackslash{}\textbackslash{}}
+\NormalTok{1 \& x\_\{3\}  \textbackslash{}tag\{4\}}
+\NormalTok{\textbackslash{}end\{bmatrix\}}
+\NormalTok{$$}
+\end{Highlighting}
+\end{Shaded}
+
+  结果显示为
+  \[
+  X = \begin{bmatrix}1 & x_{1}\\
+  1 & x_{2}\\
+  1 & x_{3}  \tag{4}
+  \end{bmatrix}
+  \]
+\item
+  用\texttt{\textbackslash{}tag}命令人为编号比较简单易用， 但是在有大量公式需要编号时就很不方便， 只要增加了一个公式就需要人为地重新编号并修改相应的引用。\texttt{bookdown}包支持对公式自动编号， 并可以按公式标签引用公式， 引用带有超链接。具体见 §\ref{bookdown-math}.
+\end{itemize}
+
+\hypertarget{ux4ee3ux7801ux5757-code-chunks}{%
+\section{代码块 (Code chunks)}\label{ux4ee3ux7801ux5757-code-chunks}}
+
+\begin{itemize}
+\item
+  行内代码
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{Add file with }\InformationTok{\textasciigrave{}git add\textasciigrave{}}
+\end{Highlighting}
+\end{Shaded}
+
+  渲染结果:
+  Add file with \texttt{git\ add}
+\item
+  单独代码
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\InformationTok{\textasciigrave{}\textasciigrave{}\textasciigrave{}bash}
+\FunctionTok{git}\NormalTok{ status}
+\FunctionTok{git}\NormalTok{ commit}
+\InformationTok{\textasciigrave{}\textasciigrave{}\textasciigrave{}}
+\end{Highlighting}
+\end{Shaded}
+
+  渲染结果:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{git}\NormalTok{ status}
+\FunctionTok{git}\NormalTok{ commit}
+\end{Highlighting}
+\end{Shaded}
+\item
+  若代码中要显示斜引号本身，则需要用更多的斜引号括起来，最多含有n个不连续的斜引号要用n+1对斜引号括起来，n+1对斜引号与文本中间用空格分隔
+
+  \begin{itemize}
+  \tightlist
+  \item
+    为了显示\texttt{\textasciigrave{}\textasciigrave{}\textasciigrave{}code\textasciigrave{}\textasciigrave{}\textasciigrave{}}，我们的代码应该为 \texttt{\textasciigrave{}\textasciigrave{}\textasciigrave{}\textasciigrave{}\ \textasciigrave{}\textasciigrave{}\textasciigrave{}code\textasciigrave{}\textasciigrave{}\textasciigrave{}\ \textasciigrave{}\textasciigrave{}\textasciigrave{}\textasciigrave{}}
+  \item
+    为了显示\texttt{\textasciigrave{}隔断\textasciigrave{}\textasciigrave{}中间文本\textasciigrave{}\textasciigrave{}隔断\textasciigrave{}}，我们的代码应该为\texttt{\textasciigrave{}\textasciigrave{}\textasciigrave{}\ \textasciigrave{}隔断\textasciigrave{}\textasciigrave{}中间文本\textasciigrave{}\textasciigrave{}隔断\textasciigrave{}\ \textasciigrave{}\textasciigrave{}\textasciigrave{}}
+  \end{itemize}
+\item
+  如果文本中没有斜引号，用多个斜引号括起来也可以，只要前后个数相同，且都在一行之内，效果与前后用一个斜引号相同。
+\item
+  为了显示
+\end{itemize}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\InformationTok{\textasciigrave{}\textasciigrave{}\textasciigrave{}bash}
+\FunctionTok{git}\NormalTok{ push}
+\InformationTok{\textasciigrave{}\textasciigrave{}\textasciigrave{}}
+\end{Highlighting}
+\end{Shaded}
+
+代码为
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\InformationTok{\textasciigrave{}\textasciigrave{}\textasciigrave{}\textasciigrave{}markdown}
+\InformationTok{\textasciigrave{}\textasciigrave{}\textasciigrave{}bash}
+\FunctionTok{git}\NormalTok{ push}
+\InformationTok{\textasciigrave{}\textasciigrave{}\textasciigrave{}}
+\InformationTok{\textasciigrave{}\textasciigrave{}\textasciigrave{}\textasciigrave{}}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{ux8868ux683c-tables}{%
+\section{表格 (Tables)}\label{ux8868ux683c-tables}}
+
+\begin{itemize}
+\item
+  Example 1
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{| Gender    | Age   | Major  |}
+\NormalTok{| {-}{-}{-}{-}{-}{-}{-}{-}{-} |{-}{-}{-}{-}{-}{-}{-}| {-}{-}{-}{-}{-} |}
+\NormalTok{| M         |18     | Statistics|}
+\NormalTok{| F         | 19    |   Math |}
+\end{Highlighting}
+\end{Shaded}
+
+  \begin{longtable}[]{@{}lll@{}}
+  \toprule
+  Gender & Age & Major\tabularnewline
+  \midrule
+  \endhead
+  M & 18 & Statistics\tabularnewline
+  F & 19 & Math\tabularnewline
+  \bottomrule
+  \end{longtable}
+\item
+  Example 2
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}}
+\CommentTok{ Centered   Default           Right Left}
+\CommentTok{  Header    Aligned         Aligned Aligned}
+\CommentTok{{-}{-}{-}}\NormalTok{{-}{-}{-}{-}{-}{-}{-}{-} {-}{-}{-}{-}{-}{-}{-} {-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-} {-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}}
+\NormalTok{   First    row                12.0 Example of a row that}
+\NormalTok{                                    spans multiple lines.}
+
+\NormalTok{  Second    row                 5.0 Here\textquotesingle{}s another one. Note}
+\NormalTok{                                    the blank line between}
+\NormalTok{                                    rows.}
+\NormalTok{{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}}
+
+\NormalTok{Table: Here\textquotesingle{}s the caption. It, too, may span}
+\NormalTok{multiple lines.}
+\end{Highlighting}
+\end{Shaded}
+
+  \begin{longtable}[]{@{}clrl@{}}
+  \caption{Here's the caption. It, too, may span
+  multiple lines.}\tabularnewline
+  \toprule
+  \begin{minipage}[b]{(\columnwidth - 3\tabcolsep) * \real{0.17}}\centering
+  Centered
+  Header\strut
+  \end{minipage} & \begin{minipage}[b]{(\columnwidth - 3\tabcolsep) * \real{0.11}}\raggedright
+  Default
+  Aligned\strut
+  \end{minipage} & \begin{minipage}[b]{(\columnwidth - 3\tabcolsep) * \real{0.22}}\raggedleft
+  Right
+  Aligned\strut
+  \end{minipage} & \begin{minipage}[b]{(\columnwidth - 3\tabcolsep) * \real{0.36}}\raggedright
+  Left
+  Aligned\strut
+  \end{minipage}\tabularnewline
+  \midrule
+  \endfirsthead
+  \toprule
+  \begin{minipage}[b]{(\columnwidth - 3\tabcolsep) * \real{0.17}}\centering
+  Centered
+  Header\strut
+  \end{minipage} & \begin{minipage}[b]{(\columnwidth - 3\tabcolsep) * \real{0.11}}\raggedright
+  Default
+  Aligned\strut
+  \end{minipage} & \begin{minipage}[b]{(\columnwidth - 3\tabcolsep) * \real{0.22}}\raggedleft
+  Right
+  Aligned\strut
+  \end{minipage} & \begin{minipage}[b]{(\columnwidth - 3\tabcolsep) * \real{0.36}}\raggedright
+  Left
+  Aligned\strut
+  \end{minipage}\tabularnewline
+  \midrule
+  \endhead
+  \begin{minipage}[t]{(\columnwidth - 3\tabcolsep) * \real{0.17}}\centering
+  First\strut
+  \end{minipage} & \begin{minipage}[t]{(\columnwidth - 3\tabcolsep) * \real{0.11}}\raggedright
+  row\strut
+  \end{minipage} & \begin{minipage}[t]{(\columnwidth - 3\tabcolsep) * \real{0.22}}\raggedleft
+  12.0\strut
+  \end{minipage} & \begin{minipage}[t]{(\columnwidth - 3\tabcolsep) * \real{0.36}}\raggedright
+  Example of a row that
+  spans multiple lines.\strut
+  \end{minipage}\tabularnewline
+  \begin{minipage}[t]{(\columnwidth - 3\tabcolsep) * \real{0.17}}\centering
+  Second\strut
+  \end{minipage} & \begin{minipage}[t]{(\columnwidth - 3\tabcolsep) * \real{0.11}}\raggedright
+  row\strut
+  \end{minipage} & \begin{minipage}[t]{(\columnwidth - 3\tabcolsep) * \real{0.22}}\raggedleft
+  5.0\strut
+  \end{minipage} & \begin{minipage}[t]{(\columnwidth - 3\tabcolsep) * \real{0.36}}\raggedright
+  Here's another one. Note
+  the blank line between
+  rows.\strut
+  \end{minipage}\tabularnewline
+  \bottomrule
+  \end{longtable}
+\item
+  Example 3
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{+{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}+{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}+{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}+}
+\NormalTok{| Fruit         | Price         | Advantages         |}
+\NormalTok{+===============+===============+====================+}
+\NormalTok{| Bananas       | $1.34         | {-} built{-}in wrapper |}
+\NormalTok{|               |               | {-} bright color     |}
+\NormalTok{+{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}+{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}+{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}+}
+\NormalTok{| Oranges       | $2.10         | {-} cures scurvy     |}
+\NormalTok{|               |               | {-} tasty            |}
+\NormalTok{+{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}+{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}+{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}+}
+\end{Highlighting}
+\end{Shaded}
+
+  \begin{longtable}[]{@{}lll@{}}
+  \toprule
+  \begin{minipage}[b]{(\columnwidth - 2\tabcolsep) * \real{0.22}}\raggedright
+  Fruit\strut
+  \end{minipage} & \begin{minipage}[b]{(\columnwidth - 2\tabcolsep) * \real{0.22}}\raggedright
+  Price\strut
+  \end{minipage} & \begin{minipage}[b]{(\columnwidth - 2\tabcolsep) * \real{0.29}}\raggedright
+  Advantages\strut
+  \end{minipage}\tabularnewline
+  \midrule
+  \endhead
+  \begin{minipage}[t]{(\columnwidth - 2\tabcolsep) * \real{0.22}}\raggedright
+  Bananas\strut
+  \end{minipage} & \begin{minipage}[t]{(\columnwidth - 2\tabcolsep) * \real{0.22}}\raggedright
+  \$1.34\strut
+  \end{minipage} & \begin{minipage}[t]{(\columnwidth - 2\tabcolsep) * \real{0.29}}\raggedright
+  \begin{itemize}
+  \tightlist
+  \item
+    built-in wrapper
+  \item
+    bright color
+  \end{itemize}\strut
+  \end{minipage}\tabularnewline
+  \begin{minipage}[t]{(\columnwidth - 2\tabcolsep) * \real{0.22}}\raggedright
+  Oranges\strut
+  \end{minipage} & \begin{minipage}[t]{(\columnwidth - 2\tabcolsep) * \real{0.22}}\raggedright
+  \$2.10\strut
+  \end{minipage} & \begin{minipage}[t]{(\columnwidth - 2\tabcolsep) * \real{0.29}}\raggedright
+  \begin{itemize}
+  \tightlist
+  \item
+    cures scurvy
+  \item
+    tasty
+  \end{itemize}\strut
+  \end{minipage}\tabularnewline
+  \bottomrule
+  \end{longtable}
+\end{itemize}
+
+\hypertarget{ux56feux7247-image}{%
+\section{图片 (Image)}\label{ux56feux7247-image}}
+
+\begin{itemize}
+\item
+  插入图片的基本语法:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\AlertTok{![](图片链接或者本地位置)}
+\end{Highlighting}
+\end{Shaded}
+\item
+  设置图片大小
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{\textless{}img}\OtherTok{ src} \OtherTok{=} \StringTok{\textquotesingle{}\textquotesingle{}}\OtherTok{ alt} \OtherTok{=} \StringTok{\textquotesingle{}\textquotesingle{}}\OtherTok{ height} \OtherTok{=} \StringTok{50\%}\OtherTok{ width} \OtherTok{=} \StringTok{50\%} \KeywordTok{/\textgreater{}}
+\end{Highlighting}
+\end{Shaded}
+
+  常用的一些参数:
+
+  \begin{longtable}[]{@{}ll@{}}
+  \toprule
+  属性 & 描述\tabularnewline
+  \midrule
+  \endhead
+  alt & 图像替代文本\tabularnewline
+  src & 图片链接或者本地地址\tabularnewline
+  height & 图片高度,单位可以是\%或者pixel\tabularnewline
+  width & 图片宽度,单位可以是\%或者pixel\tabularnewline
+  align & 图片位置,只支持left或者right\tabularnewline
+  \bottomrule
+  \end{longtable}
+\item
+  图片默认是靠左对齐.如果想要居中,需要使用\texttt{\textless{}p\textgreater{}}标签,也就是段落.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{\textless{}p}\OtherTok{ align} \OtherTok{=} \StringTok{"center"}\KeywordTok{\textgreater{}}
+\KeywordTok{\textless{}img}\OtherTok{ src} \OtherTok{=} \StringTok{\textquotesingle{}\textquotesingle{}}\OtherTok{ alt} \OtherTok{=} \StringTok{\textquotesingle{}\textquotesingle{}}\OtherTok{ height} \OtherTok{=} \StringTok{50\%}\OtherTok{ width} \OtherTok{=} \StringTok{50\%} \KeywordTok{/\textgreater{}}
+\KeywordTok{\textless{}/p\textgreater{}}
+\end{Highlighting}
+\end{Shaded}
+\end{itemize}
+
+\hypertarget{ux63d2ux5165icon}{%
+\section{插入icon}\label{ux63d2ux5165icon}}
+
+可以插入符号工具包\texttt{Font\ Awesome}.一般的markdown编辑器都已经支持直接使用HTML插入icon.
+
+比如插入微信图标:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{\textless{}i}\OtherTok{ class=}\StringTok{"fa fa{-}weixin"}\KeywordTok{\textgreater{}\textless{}/i\textgreater{}}
+\end{Highlighting}
+\end{Shaded}
+
+如果不支持,可以在markdown的最底端插入下面的代码:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{\textless{}head\textgreater{}} 
+    \KeywordTok{\textless{}script}\OtherTok{ defer src=}\StringTok{"https://use.fontawesome.com/releases/v5.0.13/js/all.js"}\KeywordTok{\textgreater{}\textless{}/script\textgreater{}} 
+    \KeywordTok{\textless{}script}\OtherTok{ defer src=}\StringTok{"https://use.fontawesome.com/releases/v5.0.13/js/v4{-}shims.js"}\KeywordTok{\textgreater{}\textless{}/script\textgreater{}} 
+\KeywordTok{\textless{}/head\textgreater{}} 
+\KeywordTok{\textless{}link}\OtherTok{ rel=}\StringTok{"stylesheet"}\OtherTok{ href=}\StringTok{"https://use.fontawesome.com/releases/v5.0.13/css/all.css"}\KeywordTok{\textgreater{}}
+\end{Highlighting}
+\end{Shaded}
+
+当然也可以使用HTML的\texttt{\textless{}a\textgreater{}}标签让icon绑定一个超链接.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{\textless{}a}\OtherTok{ href=}\StringTok{"https://guangyuzhu.rbind.io"}\KeywordTok{\textgreater{}\textless{}i}\OtherTok{ class=}\StringTok{"fa fa{-}weixin"}\KeywordTok{\textgreater{}\textless{}/i\textgreater{}\textless{}/a\textgreater{}}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{ux89c6ux9891-videoux548cux97f3ux4e50-music}{%
+\section{视频 (Video)和音乐 (music)}\label{ux89c6ux9891-videoux548cux97f3ux4e50-music}}
+
+\hypertarget{ux672cux5730ux89c6ux9891}{%
+\subsection{本地视频}\label{ux672cux5730ux89c6ux9891}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{\textless{}div}\OtherTok{ class=}\StringTok{"embed{-}responsive embed{-}responsive{-}16by9"}\KeywordTok{\textgreater{}}
+\KeywordTok{\textless{}video}\OtherTok{ width=}\StringTok{"70\%"}\OtherTok{ controls}\KeywordTok{\textgreater{}}
+  \KeywordTok{\textless{}source}\OtherTok{ src=}\StringTok{"videos/Cherry Blossom.mp4"}\OtherTok{ type=}\StringTok{"video/mp4"}\KeywordTok{\textgreater{}}
+\KeywordTok{\textless{}/video\textgreater{}}
+\KeywordTok{\textless{}/div\textgreater{}}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{ux672cux5730ux97f3ux9891}{%
+\subsection{本地音频}\label{ux672cux5730ux97f3ux9891}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{\textless{}figure\textgreater{}}
+    \CommentTok{\textless{}!{-}{-}\textless{}figcaption\textgreater{}Listen to :\textless{}/figcaption\textgreater{}{-}{-}\textgreater{}}
+    \KeywordTok{\textless{}audio}\OtherTok{ controls loop autoplay}\KeywordTok{\textgreater{}}
+        \KeywordTok{\textless{}source}\OtherTok{ src=}\StringTok{"audios/Primrose, the Dancer.m4a"}\OtherTok{  type=}\StringTok{"audio/mp3"}\KeywordTok{\textgreater{}}\NormalTok{\textgreater{}}
+    \KeywordTok{\textless{}/audio\textgreater{}}
+\KeywordTok{\textless{}/figure\textgreater{}}   
+\end{Highlighting}
+\end{Shaded}
+
+\begin{quote}
+\end{quote}
+
+\hypertarget{embed-audio-from-soundcloud}{%
+\subsection{Embed audio from soundcloud}\label{embed-audio-from-soundcloud}}
+
+\href{https://soundcloud.com/}{Soundcloud}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\textless{}!{-}{-} I changed the code to make it minimal {-}{-}\textgreater{}}
+\KeywordTok{\textless{}iframe}\OtherTok{ width=}\StringTok{"50\%"}\OtherTok{ height=}\StringTok{"66"} 
+\OtherTok{        scrolling=}\StringTok{"no"}\OtherTok{ frameborder=}\StringTok{"no"} 
+\OtherTok{        allow=}\StringTok{"autoplay"} 
+\OtherTok{        src=}\StringTok{"https://w.soundcloud.com/player/?url=https\%3A//api.soundcloud.com/tracks/471669768}\ErrorTok{\&}\StringTok{color=\%23ff5500}\ErrorTok{\&}\StringTok{auto\_play=false}\ErrorTok{\&}\StringTok{hide\_related=true}\ErrorTok{\&}\StringTok{show\_comments=false}\ErrorTok{\&}\StringTok{show\_user=false}\ErrorTok{\&}\StringTok{show\_reposts=false}\ErrorTok{\&}\StringTok{show\_teaser=false"}\KeywordTok{\textgreater{}}
+\KeywordTok{\textless{}/iframe\textgreater{}}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{ux6dfbux52a0ux9644ux4ef6}{%
+\section{添加附件}\label{ux6dfbux52a0ux9644ux4ef6}}
+
+用HTML语法实现：
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{\textless{}a}\OtherTok{ href=}\StringTok{"data/AZT.Rdata"}\OtherTok{ download=}\StringTok{"AZT.Rdata"}\KeywordTok{\textgreater{}}\NormalTok{点击下载附件 *AZT.Rdata*}\KeywordTok{\textless{}/a\textgreater{}}
+\end{Highlighting}
+\end{Shaded}
+
+效果为
+
+点击下载附件 \emph{AZT.Rdata}
+
+\bibliography{book.bib,packages.bib}
+
+\backmatter
+\printindex
+
+\end{document}
