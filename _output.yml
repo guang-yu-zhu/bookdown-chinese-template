@@ -1,5 +1,6 @@
 bookdown::gitbook:
   css: css/style.css
+  split_by: chapter
   config:
     toc:
       collapse: none
@@ -13,10 +14,10 @@ bookdown::gitbook:
       github: yes
       facebook: no
 bookdown::pdf_book:
-  includes:
-    in_header: latex/preamble.tex
-    before_body: latex/before_body.tex
-    after_body: latex/after_body.tex
+#  includes:
+#    in_header: latex/preamble.tex
+#    before_body: latex/before_body.tex
+#    after_body: latex/after_body.tex
   keep_tex: yes
   dev: "cairo_pdf"
   latex_engine: xelatex

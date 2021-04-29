@@ -1,15 +1,17 @@
-book_filename: Chinese book template
+book_filename: Chinese_book_template
 repo: https://github.com/guang-yu-zhu/bookdown-chinese-template
+delete_merged_file: true
 output_dir: docs
 rmd_files: [
         "index.Rmd",
-        "01-markdown.Rmd"
+        "01.Rmd",
+        "02.Rmd"
         ]
 clean: [packages.bib, bookdown.bbl]
-language:
-  label:
-    fig: "图 "
-    tab: "表 "
-  ui:
-    edit: "编辑"
-    chapter_name: ["第 ", " 章"]
+# language:
+#   label:
+#     fig: "图 "
+#     tab: "表 "
+#   ui:
+#     edit: "编辑"
+#     chapter_name: ["第 ", " 章"]
