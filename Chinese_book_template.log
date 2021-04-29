@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.4.28)  28 APR 2021 22:52
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.4.28)  28 APR 2021 22:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1374,14 +1374,21 @@ Package hyperref Warning: Suppressing empty link on input line 205.
 
 [5] [6
 
-] [7] [8
+]
+
+Package xcolor Warning: Incompatible color definition on input line 214.
+
+
+Package xcolor Warning: Incompatible color definition on input line 214.
+
+[7] [8
 
 ]
 
-Package xcolor Warning: Incompatible color definition on input line 241.
+Package xcolor Warning: Incompatible color definition on input line 243.
 
 
-Package xcolor Warning: Incompatible color definition on input line 241.
+Package xcolor Warning: Incompatible color definition on input line 243.
 
 (./Chinese_book_template.bbl [9] [10
 
@@ -1392,12 +1399,12 @@ Package rerunfilecheck Info: File `Chinese_book_template.out' has not changed.
 (rerunfilecheck)             Checksum: 7CF7836E91061332A85EEBBCFED1EFDD;161.
  ) 
 Here is how much of TeX's memory you used:
- 39959 strings out of 478918
- 833221 string characters out of 5865779
- 1190237 words of memory out of 5000000
- 59096 multiletter control sequences out of 15000+600000
+ 39962 strings out of 478918
+ 833301 string characters out of 5865779
+ 1190267 words of memory out of 5000000
+ 59099 multiletter control sequences out of 15000+600000
  416290 words of font info for 74 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 101i,6n,107p,590b,1157s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 101i,6n,107p,590b,1159s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on Chinese_book_template.pdf (12 pages).

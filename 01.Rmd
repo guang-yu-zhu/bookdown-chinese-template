@@ -1,5 +1,6 @@
 # Block {#chapter1}
 
+@blei2017variational
 
 ```{block2,type='rmdwarn'}
 这是警告
