@@ -127,14 +127,18 @@ div.csl-indent {
 <li>another item</li>
 </ul>
 </div>
-<!--
-\BeginKnitrBlock{rmdtip}<div class="rmdtip">__这是提示__</div>\EndKnitrBlock{rmdtip}
 
-\BeginKnitrBlock{rmdnote}<div class="rmdnote">这是注意</div>\EndKnitrBlock{rmdnote}
+<div class="rmdtip">
+<strong>这是提示</strong>
+</div>
 
-\BeginKnitrBlock{rmdinfo}<div class="rmdinfo">普通说明</div>\EndKnitrBlock{rmdinfo}
+<div class="rmdnote">
+这是注意
+</div>
 
--->
+<div class="rmdinfo">
+普通说明
+</div>
 
 </div>
             </section>
@@ -159,7 +163,7 @@ div.csl-indent {
 gitbook.require(["gitbook"], function(gitbook) {
 gitbook.start({
 "sharing": {
-"github": true,
+"github": false,
 "facebook": false,
 "twitter": true,
 "linkedin": false,
@@ -186,7 +190,7 @@ gitbook.start({
 "link": null,
 "text": null
 },
-"download": ["Chinese_book_template.pdf"],
+"download": ["Chinese_book_template.pdf", "Chinese_book_template.epub"],
 "toc": {
 "collapse": "none"
 }
