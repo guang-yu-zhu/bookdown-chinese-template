@@ -1,3 +1,5 @@
+\mainmatter
+
 # Block {#chapter1}
 
 @blei2017variational

@@ -1,12 +1,12 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.4.28)  28 APR 2021 23:12
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.4.28)  28 APR 2021 23:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **Chinese_book_template.tex
 (./Chinese_book_template.tex
 LaTeX2e <2020-10-01> patch level 4
-L3 programming layer <2021-02-18> (/Users/guangyu/Library/TinyTeX/texmf-dist/te
-x/latex/ctex/ctexbook.cls
+L3 programming layer <2021-02-18>
+(/Users/guangyu/Library/TinyTeX/texmf-dist/tex/latex/ctex/ctexbook.cls
 (/Users/guangyu/Library/TinyTeX/texmf-dist/tex/latex/ctex/config/ctexbackend.cf
 g
 File: ctexbackend.cfg 2021/03/14 v2.5.6 Backend configuration file (CTEX)
@@ -16,7 +16,7 @@ Package: expl3 2021-02-18 L3 programming layer (loader)
 (/Users/guangyu/Library/TinyTeX/texmf-dist/tex/latex/l3backend/l3backend-xetex.
 def
 File: l3backend-xetex.def 2021-03-18 L3 backend support: XeTeX
-(|extractbb --version)
+ (|extractbb --version)
 \c__kernel_sys_dvipdfmx_version_int=\count175
 \l__color_backend_stack_int=\count176
 \g__color_backend_stack_int=\count177
@@ -42,12 +42,15 @@ Package: l3keys2e 2021-03-12 LaTeX2e option processing using LaTeX3 keys
 Package: ctexhook 2021/03/14 v2.5.6 Document and package hooks (CTEX)
 ) (/Users/guangyu/Library/TinyTeX/texmf-dist/tex/latex/ctex/ctexpatch.sty
 Package: ctexpatch 2021/03/14 v2.5.6 Patching commands (CTEX)
-) (/Users/guangyu/Library/TinyTeX/texmf-dist/tex/latex/base/fix-cm.sty
+)
+(/Users/guangyu/Library/TinyTeX/texmf-dist/tex/latex/base/fix-cm.sty
 Package: fix-cm 2015/01/14 v1.1t fixes to LaTeX
+
 (/Users/guangyu/Library/TinyTeX/texmf-dist/tex/latex/base/ts1enc.def
 File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding TS1 on input line 47.
-)) (/Users/guangyu/Library/TinyTeX/texmf-dist/tex/latex/everysel/everysel.sty
+))
+(/Users/guangyu/Library/TinyTeX/texmf-dist/tex/latex/everysel/everysel.sty
 Package: everysel 2021/01/20 v2.1 EverySelectfont Package (MS)
 
 (/Users/guangyu/Library/TinyTeX/texmf-dist/tex/latex/everysel/everysel-2011-10-
@@ -57,9 +60,11 @@ Package: everysel 2021/01/20 v2.1 EverySelectfont Package (MS)
 \l__ctex_tmp_dim=\dimen138
 \g__ctex_section_depth_int=\count183
 \g__ctex_font_size_int=\count184
+
 (/Users/guangyu/Library/TinyTeX/texmf-dist/tex/latex/ctex/config/ctexopts.cfg
 File: ctexopts.cfg 2021/03/14 v2.5.6 Option configuration file (CTEX)
-) (/Users/guangyu/Library/TinyTeX/texmf-dist/tex/latex/base/book.cls
+)
+(/Users/guangyu/Library/TinyTeX/texmf-dist/tex/latex/base/book.cls
 Document Class: book 2020/04/10 v1.4m Standard LaTeX document class
 (/Users/guangyu/Library/TinyTeX/texmf-dist/tex/latex/base/bk10.clo
 File: bk10.clo 2020/04/10 v1.4m Standard LaTeX file (size option)
@@ -80,7 +85,7 @@ File: bk10.clo 2020/04/10 v1.4m Standard LaTeX file (size option)
 (/Users/guangyu/Library/TinyTeX/texmf-dist/tex/latex/ctex/engine/ctex-engine-xe
 tex.def
 File: ctex-engine-xetex.def 2021/03/14 v2.5.6 XeLaTeX adapter (CTEX)
-(/Users/guangyu/Library/TinyTeX/texmf-dist/tex/xelatex/xecjk/xeCJK.sty
+ (/Users/guangyu/Library/TinyTeX/texmf-dist/tex/xelatex/xecjk/xeCJK.sty
 Package: xeCJK 2020/10/19 v3.8.6 Typesetting CJK scripts with XeLaTeX
 
 (/Users/guangyu/Library/TinyTeX/texmf-dist/tex/latex/l3packages/xtemplate/xtemp
@@ -149,6 +154,7 @@ Package xtemplate Info: Declaring object type 'xeCJK/punctuation' taking 0
 \g__xeCJK_fam_allocation_int=\count270
 \l__xeCJK_verb_case_int=\count271
 \l__xeCJK_verb_exspace_skip=\skip55
+
 (/Users/guangyu/Library/TinyTeX/texmf-dist/tex/latex/fontspec/fontspec.sty
 Package: fontspec 2020/02/21 v2.7i Font selection for XeLaTeX and LuaLaTeX
 
@@ -170,9 +176,10 @@ X
 \l__fontspec_tmpa_dim=\dimen169
 \l__fontspec_tmpb_dim=\dimen170
 \l__fontspec_tmpc_dim=\dimen171
-(/Users/guangyu/Library/TinyTeX/texmf-dist/tex/latex/base/fontenc.sty
+ (/Users/guangyu/Library/TinyTeX/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2020/08/10 v2.0s Standard LaTeX package
-) (/Users/guangyu/Library/TinyTeX/texmf-dist/tex/latex/fontspec/fontspec.cfg)))
+)
+(/Users/guangyu/Library/TinyTeX/texmf-dist/tex/latex/fontspec/fontspec.cfg)))
 (/Users/guangyu/Library/TinyTeX/texmf-dist/tex/xelatex/xecjk/xeCJK.cfg
 File: xeCJK.cfg 2020/10/19 v3.8.6 Configuration file for xeCJK package
 ))
@@ -180,6 +187,7 @@ File: xeCJK.cfg 2020/10/19 v3.8.6 Configuration file for xeCJK package
 \l__ctex_ccglue_skip=\skip56
 )
 \l__ctex_ziju_dim=\dimen173
+
 (/Users/guangyu/Library/TinyTeX/texmf-dist/tex/latex/zhnumber/zhnumber.sty
 Package: zhnumber 2020/05/01 v2.8 Typesetting numbers with Chinese glyphs
 \l__zhnum_scale_int=\count283
@@ -197,7 +205,8 @@ TEX)
 (/Users/guangyu/Library/TinyTeX/texmf-dist/tex/latex/ctex/config/ctex-name-utf8
 .cfg
 File: ctex-name-utf8.cfg 2021/03/14 v2.5.6 Caption with encoding UTF-8 (CTEX)
-)) (/Users/guangyu/Library/TinyTeX/texmf-dist/tex/latex/ctex/ctex-c5size.clo
+))
+(/Users/guangyu/Library/TinyTeX/texmf-dist/tex/latex/ctex/ctex-c5size.clo
 File: ctex-c5size.clo 2021/03/14 v2.5.6 c5size option (CTEX)
 )
 (/Users/guangyu/Library/TinyTeX/texmf-dist/tex/latex/ctex/fontset/ctex-fontset-
@@ -208,6 +217,7 @@ File: ctex-fontset-mac.def 2021/03/14 v2.5.6 macOS fonts definition (CTEX)
 macnew.def
 File: ctex-fontset-macnew.def 2021/03/14 v2.5.6 macOS fonts definition for El C
 apitan or later version (CTEX)
+
 
 Package fontspec Warning: Font "Songti SC Light" does not contain requested
 (fontspec)                Script "CJK".
@@ -238,6 +248,7 @@ Package fontspec Info: Font family 'SongtiSCLight(0)' created for font 'Songti
 File: ctex.cfg 2021/03/14 v2.5.6 Configuration file (CTEX)
 )
 \cslhangindent=\skip58
+
 (/Users/guangyu/Library/TinyTeX/texmf-dist/tex/latex/lm/lmodern.sty
 Package: lmodern 2015/05/01 v1.6.1 Latin Modern Fonts
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
@@ -272,8 +283,10 @@ LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 (Font)                  OT1/cmr/bx/it --> OT1/lmr/bx/it on input line 37.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 38.
-) (/Users/guangyu/Library/TinyTeX/texmf-dist/tex/latex/amsfonts/amssymb.sty
+)
+(/Users/guangyu/Library/TinyTeX/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
 (/Users/guangyu/Library/TinyTeX/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \@emptytoks=\toks15
@@ -282,20 +295,25 @@ Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-)) (/Users/guangyu/Library/TinyTeX/texmf-dist/tex/latex/amsmath/amsmath.sty
+))
+(/Users/guangyu/Library/TinyTeX/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2020/09/23 v2.17i AMS math features
 \@mathmargin=\skip59
+
 For additional information on amsmath, use the `?' option.
 (/Users/guangyu/Library/TinyTeX/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01 AMS text
+
 (/Users/guangyu/Library/TinyTeX/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks16
 \ex@=\dimen174
-)) (/Users/guangyu/Library/TinyTeX/texmf-dist/tex/latex/amsmath/amsbsy.sty
+))
+(/Users/guangyu/Library/TinyTeX/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen175
-) (/Users/guangyu/Library/TinyTeX/texmf-dist/tex/latex/amsmath/amsopn.sty
+)
+(/Users/guangyu/Library/TinyTeX/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
 \inf@bad=\count284
@@ -335,15 +353,20 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
 \mathdisplay@stack=\toks20
 LaTeX Info: Redefining \[ on input line 2923.
 LaTeX Info: Redefining \] on input line 2924.
-) (/Users/guangyu/Library/TinyTeX/texmf-dist/tex/generic/iftex/ifxetex.sty
+)
+(/Users/guangyu/Library/TinyTeX/texmf-dist/tex/generic/iftex/ifxetex.sty
 Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
+
 (/Users/guangyu/Library/TinyTeX/texmf-dist/tex/generic/iftex/iftex.sty
 Package: iftex 2020/03/06 v1.0d TeX engine tests
-)) (/Users/guangyu/Library/TinyTeX/texmf-dist/tex/generic/iftex/ifluatex.sty
+))
+(/Users/guangyu/Library/TinyTeX/texmf-dist/tex/generic/iftex/ifluatex.sty
 Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
-) (/Users/guangyu/Library/TinyTeX/texmf-dist/tex/latex/base/fixltx2e.sty
+)
+(/Users/guangyu/Library/TinyTeX/texmf-dist/tex/latex/base/fixltx2e.sty
 Package: fixltx2e 2016/12/29 v2.1a fixes to LaTeX (obsolete)
 Applying: [2015/01/01] Old fixltx2e package on input line 46.
+
 
 Package fixltx2e Warning: fixltx2e is not required with releases after 2015
 (fixltx2e)                All fixes are now in the LaTeX kernel.
@@ -360,17 +383,21 @@ ts
 \subsupersep=\dimen183
 ) (/Users/guangyu/Library/TinyTeX/texmf-dist/tex/latex/metalogo/metalogo.sty
 Package: metalogo 2010/05/29 v0.12 Extended TeX logo macros
+
 (/Users/guangyu/Library/TinyTeX/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2020/09/09 v1.2b Enhanced LaTeX Graphics (DPC,SPQR)
+
 (/Users/guangyu/Library/TinyTeX/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks21
-) (/Users/guangyu/Library/TinyTeX/texmf-dist/tex/latex/graphics/graphics.sty
+)
+(/Users/guangyu/Library/TinyTeX/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2020/08/30 v1.4c Standard LaTeX Graphics (DPC,SPQR)
+
 (/Users/guangyu/Library/TinyTeX/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
-) (/Users/guangyu/Library/TinyTeX/texmf-dist/tex/latex/graphics-cfg/graphics.cf
-g
+)
+(/Users/guangyu/Library/TinyTeX/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: xetex.def on input line 105.
@@ -393,6 +420,7 @@ LaTeX Info: Redefining \LaTeXe on input line 219.
 ) (/Users/guangyu/Library/TinyTeX/texmf-dist/tex/xelatex/xunicode/xunicode.sty
 File: xunicode.sty 2011/09/09 v0.981 provides access to latin accents and many 
 other characters in Unicode lower plane
+
 (/Users/guangyu/Library/TinyTeX/texmf-dist/tex/latex/tipa/t3enc.def
 File: t3enc.def 2001/12/31 T3 encoding
 
@@ -420,7 +448,8 @@ Package fontspec Info: Font family 'PingFangSC(0)' created for font 'PingFang
 \tipaTiiicode=\count296
 \tipasavetokens=\toks24
 \tipachecktokens=\toks25
-) (/Users/guangyu/Library/TinyTeX/texmf-dist/tex/latex/microtype/microtype.sty
+)
+(/Users/guangyu/Library/TinyTeX/texmf-dist/tex/latex/microtype/microtype.sty
 Package: microtype 2021/03/14 v2.8c Micro-typographical refinements (RS)
 \MT@toks=\toks26
 \MT@count=\count297
@@ -435,10 +464,13 @@ File: microtype-xetex.def 2021/03/14 v2.8c Definitions specific to xetex (RS)
 LaTeX Info: Redefining \lsstyle on input line 254.
 )
 Package microtype Info: Loading configuration file microtype.cfg.
+
 (/Users/guangyu/Library/TinyTeX/texmf-dist/tex/latex/microtype/microtype.cfg
 File: microtype.cfg 2021/03/14 v2.8c microtype main configuration file (RS)
-)) (/Users/guangyu/Library/TinyTeX/texmf-dist/tex/latex/geometry/geometry.sty
+))
+(/Users/guangyu/Library/TinyTeX/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
+
 (/Users/guangyu/Library/TinyTeX/texmf-dist/tex/generic/iftex/ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
@@ -454,8 +486,10 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 \Gm@layouthoffset=\dimen193
 \Gm@layoutvoffset=\dimen194
 \Gm@dimlist=\toks27
-) (/Users/guangyu/Library/TinyTeX/texmf-dist/tex/latex/hyperref/hyperref.sty
+)
+(/Users/guangyu/Library/TinyTeX/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2021-02-27 v7.00k Hypertext links for LaTeX
+
 (/Users/guangyu/Library/TinyTeX/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
 Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
 )
@@ -463,21 +497,22 @@ Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
 y
 Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
 )
+
 (/Users/guangyu/Library/TinyTeX/texmf-dist/tex/generic/infwarerr/infwarerr.sty
 Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
 )
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode not found.
-) (/Users/guangyu/Library/TinyTeX/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.st
-y
+)
+(/Users/guangyu/Library/TinyTeX/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
 Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
 )
 (/Users/guangyu/Library/TinyTeX/texmf-dist/tex/generic/kvdefinekeys/kvdefinekey
 s.sty
 Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
-) (/Users/guangyu/Library/TinyTeX/texmf-dist/tex/generic/pdfescape/pdfescape.st
-y
+)
+(/Users/guangyu/Library/TinyTeX/texmf-dist/tex/generic/pdfescape/pdfescape.sty
 Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
 ) (/Users/guangyu/Library/TinyTeX/texmf-dist/tex/latex/hycolor/hycolor.sty
 Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
@@ -487,12 +522,14 @@ y
 Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
 ) (/Users/guangyu/Library/TinyTeX/texmf-dist/tex/latex/auxhook/auxhook.sty
 Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
-) (/Users/guangyu/Library/TinyTeX/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+)
+(/Users/guangyu/Library/TinyTeX/texmf-dist/tex/latex/kvoptions/kvoptions.sty
 Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
 )
 \@linkdim=\dimen195
 \Hy@linkcounter=\count302
 \Hy@pagecounter=\count303
+
 (/Users/guangyu/Library/TinyTeX/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2021-02-27 v7.00k Hyperref: PDFDocEncoding definition (HO)
 )
@@ -500,12 +537,15 @@ File: pd1enc.def 2021-02-27 v7.00k Hyperref: PDFDocEncoding definition (HO)
 hes.def
 File: hyperref-langpatches.def 2021-02-27 v7.00k Hyperref: patches for babel la
 nguages
-) (/Users/guangyu/Library/TinyTeX/texmf-dist/tex/generic/intcalc/intcalc.sty
+)
+(/Users/guangyu/Library/TinyTeX/texmf-dist/tex/generic/intcalc/intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
-) (/Users/guangyu/Library/TinyTeX/texmf-dist/tex/generic/etexcmds/etexcmds.sty
+)
+(/Users/guangyu/Library/TinyTeX/texmf-dist/tex/generic/etexcmds/etexcmds.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
 \Hy@SavedSpaceFactor=\count304
+
 (/Users/guangyu/Library/TinyTeX/texmf-dist/tex/latex/hyperref/puenc.def
 File: puenc.def 2021-02-27 v7.00k Hyperref: PDF Unicode definition (HO)
 
@@ -524,12 +564,13 @@ Package hyperref Info: Backreferencing OFF on input line 4212.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4445.
 \c@Hy@tempcnt=\count305
-(/Users/guangyu/Library/TinyTeX/texmf-dist/tex/latex/url/url.sty
+ (/Users/guangyu/Library/TinyTeX/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip18
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 4804.
 \XeTeXLinkMargin=\dimen196
+
 (/Users/guangyu/Library/TinyTeX/texmf-dist/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 
@@ -550,7 +591,7 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6100.
 Package hyperref Info: PDF/A mode OFF on input line 6105.
 LaTeX Info: Redefining \ref on input line 6145.
 LaTeX Info: Redefining \pageref on input line 6149.
-(/Users/guangyu/Library/TinyTeX/texmf-dist/tex/latex/base/atbegshi-ltx.sty
+ (/Users/guangyu/Library/TinyTeX/texmf-dist/tex/latex/base/atbegshi-ltx.sty
 Package: atbegshi-ltx 2020/08/17 v1.0a Emulation of the original atbegshi packa
 ge
 with kernel methods
@@ -560,8 +601,9 @@ with kernel methods
 \c@Hfootnote=\count309
 )
 Package hyperref Info: Driver (autodetected): hxetex.
-(/Users/guangyu/Library/TinyTeX/texmf-dist/tex/latex/hyperref/hxetex.def
+ (/Users/guangyu/Library/TinyTeX/texmf-dist/tex/latex/hyperref/hxetex.def
 File: hxetex.def 2021-02-27 v7.00k Hyperref driver for XeTeX
+
 (/Users/guangyu/Library/TinyTeX/texmf-dist/tex/generic/stringenc/stringenc.sty
 Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
 )
@@ -575,6 +617,7 @@ Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
 (/Users/guangyu/Library/TinyTeX/texmf-dist/tex/latex/rerunfilecheck/rerunfilech
 eck.sty
 Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
+
 (/Users/guangyu/Library/TinyTeX/texmf-dist/tex/latex/base/atveryend-ltx.sty
 Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atvery packag
 e
@@ -591,13 +634,15 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 Package hyperref Info: Option `colorlinks' set `true' on input line 41.
 Package hyperref Info: Option `breaklinks' set `true' on input line 41.
+
 (/Users/guangyu/Library/TinyTeX/texmf-dist/tex/latex/natbib/natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip63
 \bibsep=\skip64
 LaTeX Info: Redefining \cite on input line 694.
 \c@NAT@ctr=\count314
-) (/Users/guangyu/Library/TinyTeX/texmf-dist/tex/latex/tools/longtable.sty
+)
+(/Users/guangyu/Library/TinyTeX/texmf-dist/tex/latex/tools/longtable.sty
 Package: longtable 2020/01/07 v4.13 Multi-page Table package (DPC)
 \LTleft=\skip65
 \LTright=\skip66
@@ -614,7 +659,8 @@ Package: longtable 2020/01/07 v4.13 Multi-page Table package (DPC)
 \c@LT@tables=\count318
 \c@LT@chunks=\count319
 \LT@p@ftn=\toks28
-) (/Users/guangyu/Library/TinyTeX/texmf-dist/tex/latex/booktabs/booktabs.sty
+)
+(/Users/guangyu/Library/TinyTeX/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \heavyrulewidth=\dimen256
 \lightrulewidth=\dimen257
@@ -633,12 +679,15 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \@thisruleclass=\count322
 \@lastruleclass=\count323
 \@thisrulewidth=\dimen268
-) (/Users/guangyu/Library/TinyTeX/texmf-dist/tex/latex/mdwtools/footnote.sty
+)
+(/Users/guangyu/Library/TinyTeX/texmf-dist/tex/latex/mdwtools/footnote.sty
 Package: footnote 1997/01/28 1.13 Save footnotes around boxes
 \fn@notes=\box61
 \fn@width=\dimen269
-) (/Users/guangyu/Library/TinyTeX/texmf-dist/tex/latex/parskip/parskip.sty
+)
+(/Users/guangyu/Library/TinyTeX/texmf-dist/tex/latex/parskip/parskip.sty
 Package: parskip 2021-03-14 v2.0h non-zero parskip adjustments
+
 (/Users/guangyu/Library/TinyTeX/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count324
@@ -652,19 +701,24 @@ Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
 \fb@frh=\dimen271
 \FrameRule=\dimen272
 \FrameSep=\dimen273
-) (/Users/guangyu/Library/TinyTeX/texmf-dist/tex/latex/graphics/color.sty
+)
+(/Users/guangyu/Library/TinyTeX/texmf-dist/tex/latex/graphics/color.sty
 Package: color 2020/02/24 v1.2b Standard LaTeX Color (DPC)
+
 (/Users/guangyu/Library/TinyTeX/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: xetex.def on input line 147.
+
 (/Users/guangyu/Library/TinyTeX/texmf-dist/tex/latex/graphics/dvipsnam.def
 File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
-)) (/Users/guangyu/Library/TinyTeX/texmf-dist/tex/latex/base/makeidx.sty
+))
+(/Users/guangyu/Library/TinyTeX/texmf-dist/tex/latex/base/makeidx.sty
 Package: makeidx 2014/09/29 v1.0m Standard LaTeX package
 )
 \@indexfile=\write3
 \openout3 = `Chinese_book_template.idx'.
+
 
 Writing index file Chinese_book_template.idx
 (/Users/guangyu/Library/TinyTeX/texmf-dist/tex/latex/amscls/amsthm.sty
@@ -678,22 +732,28 @@ Package: amsthm 2020/05/29 v2.20.6
 \thm@postskip=\skip71
 \thm@headsep=\skip72
 \dth@everypar=\toks34
-) (/Users/guangyu/Library/TinyTeX/texmf-dist/tex/latex/adjustbox/adjustbox.sty
+)
+(/Users/guangyu/Library/TinyTeX/texmf-dist/tex/latex/adjustbox/adjustbox.sty
 Package: adjustbox 2020/08/19 v1.3 Adjusting TeX boxes (trim, clip, ...)
+
 (/Users/guangyu/Library/TinyTeX/texmf-dist/tex/latex/xkeyval/xkeyval.sty
 Package: xkeyval 2020/11/20 v2.8 package option processing (HA)
-(/Users/guangyu/Library/TinyTeX/texmf-dist/tex/generic/xkeyval/xkeyval.tex (/Us
-ers/guangyu/Library/TinyTeX/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+
+(/Users/guangyu/Library/TinyTeX/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/Users/guangyu/Library/TinyTeX/texmf-dist/tex/generic/xkeyval/xkvutils.tex
 \XKV@toks=\toks35
 \XKV@tempa@toks=\toks36
 )
 \XKV@depth=\count325
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
-)) (/Users/guangyu/Library/TinyTeX/texmf-dist/tex/latex/adjustbox/adjcalc.sty
+))
+(/Users/guangyu/Library/TinyTeX/texmf-dist/tex/latex/adjustbox/adjcalc.sty
 Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back
 -ends (calc, etex, pgfmath)
-) (/Users/guangyu/Library/TinyTeX/texmf-dist/tex/latex/adjustbox/trimclip.sty
+)
+(/Users/guangyu/Library/TinyTeX/texmf-dist/tex/latex/adjustbox/trimclip.sty
 Package: trimclip 2020/08/19 v1.2 Trim and clip general TeX material
+
 (/Users/guangyu/Library/TinyTeX/texmf-dist/tex/latex/collectbox/collectbox.sty
 Package: collectbox 2012/05/17 v0.4b Collect macro arguments as boxes
 \collectedbox=\box62
@@ -714,14 +774,17 @@ File: tc-xetex.def 2019/01/04 v2.2 Clipping driver for xetex
 \adjbox@pheight=\dimen283
 \adjbox@pdepth=\dimen284
 \adjbox@ptotalheight=\dimen285
+
 (/Users/guangyu/Library/TinyTeX/texmf-dist/tex/latex/varwidth/varwidth.sty
 Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 \@vwid@box=\box63
 \sift@deathcycles=\count326
 \@vwid@loff=\dimen286
 \@vwid@roff=\dimen287
-)) (/Users/guangyu/Library/TinyTeX/texmf-dist/tex/latex/xcolor/xcolor.sty
+))
+(/Users/guangyu/Library/TinyTeX/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
 (/Users/guangyu/Library/TinyTeX/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
@@ -735,10 +798,12 @@ Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
 Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
-) (/Users/guangyu/Library/TinyTeX/texmf-dist/tex/latex/tcolorbox/tcolorbox.sty
+)
+(/Users/guangyu/Library/TinyTeX/texmf-dist/tex/latex/tcolorbox/tcolorbox.sty
 Package: tcolorbox 2020/10/09 version 4.42 text color boxes
-(/Users/guangyu/Library/TinyTeX/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty (/U
-sers/guangyu/Library/TinyTeX/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+
+(/Users/guangyu/Library/TinyTeX/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+(/Users/guangyu/Library/TinyTeX/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
 (/Users/guangyu/Library/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfutil-co
 mmon.tex
 \pgfutil@everybye=\toks37
@@ -752,8 +817,8 @@ tex.def
 \pgfutil@abb=\box64
 )
 (/Users/guangyu/Library/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfrcs.cod
-e.tex (/Users/guangyu/Library/TinyTeX/texmf-dist/tex/generic/pgf/pgf.revision.t
-ex)
+e.tex
+(/Users/guangyu/Library/TinyTeX/texmf-dist/tex/generic/pgf/pgf.revision.tex)
 Package: pgfrcs 2020/12/27 v3.1.8b (3.1.8b)
 ))
 Package: pgf 2020/12/27 v3.1.8b (3.1.8b)
@@ -795,6 +860,7 @@ tered.code.tex
 \t@pgf@tokb=\toks42
 \t@pgf@tokc=\toks43
 \pgf@sys@id@count=\count331
+
 (/Users/guangyu/Library/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
 File: pgf.cfg 2020/12/27 v3.1.8b (3.1.8b)
 )
@@ -984,13 +1050,16 @@ Package: pgfcomp-version-0-65 2020/12/27 v3.1.8b (3.1.8b)
 (/Users/guangyu/Library/TinyTeX/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-
 version-1-18.sty
 Package: pgfcomp-version-1-18 2020/12/27 v3.1.8b (3.1.8b)
-)) (/Users/guangyu/Library/TinyTeX/texmf-dist/tex/latex/tools/verbatim.sty
+))
+(/Users/guangyu/Library/TinyTeX/texmf-dist/tex/latex/tools/verbatim.sty
 Package: verbatim 2020-07-07 v1.5u LaTeX2e package for verbatim enhancements
 \every@verbatim=\toks47
 \verbatim@line=\toks48
 \verbatim@in@stream=\read3
-) (/Users/guangyu/Library/TinyTeX/texmf-dist/tex/latex/environ/environ.sty
+)
+(/Users/guangyu/Library/TinyTeX/texmf-dist/tex/latex/environ/environ.sty
 Package: environ 2014/05/04 v0.3 A new way to define environments
+
 (/Users/guangyu/Library/TinyTeX/texmf-dist/tex/latex/trimspaces/trimspaces.sty
 Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 ))
@@ -1020,11 +1089,11 @@ x
 Library (tcolorbox): 'tcbskins.code.tex' version '4.42'
 
 (/Users/guangyu/Library/TinyTeX/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
-(/Users/guangyu/Library/TinyTeX/texmf-dist/tex/latex/pgf/utilities/pgffor.sty (
-/Users/guangyu/Library/TinyTeX/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+(/Users/guangyu/Library/TinyTeX/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
+(/Users/guangyu/Library/TinyTeX/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
 (/Users/guangyu/Library/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfkeys.co
-de.tex)) (/Users/guangyu/Library/TinyTeX/texmf-dist/tex/latex/pgf/math/pgfmath.
-sty
+de.tex))
+(/Users/guangyu/Library/TinyTeX/texmf-dist/tex/latex/pgf/math/pgfmath.sty
 (/Users/guangyu/Library/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmath.code.te
 x))
 (/Users/guangyu/Library/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgffor.cod
@@ -1136,12 +1205,14 @@ Library (tcolorbox): 'tcblistings.code.tex' version '4.42'
 \lst@newlines=\count360
 \lst@lineno=\count361
 \lst@maxwidth=\dimen344
+
 (/Users/guangyu/Library/TinyTeX/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
 \c@lstnumber=\count362
 \lst@skipnumbers=\count363
 \lst@framebox=\box88
-) (/Users/guangyu/Library/TinyTeX/texmf-dist/tex/latex/listings/listings.cfg
+)
+(/Users/guangyu/Library/TinyTeX/texmf-dist/tex/latex/listings/listings.cfg
 File: listings.cfg 2020/03/24 1.8d listings configuration
 ))
 Package: listings 2020/03/24 1.8d (Carsten Heinz)
@@ -1199,6 +1270,7 @@ Package: xunicode-addon 2020/10/19 v3.8.6 addon file for xunicode
 ) (/Users/guangyu/Library/TinyTeX/texmf-dist/tex/xelatex/xunicode/xunicode.sty
 File: xunicode.sty 2011/09/09 v0.981 provides access to latin accents and many 
 other characters in Unicode lower plane
+
 *** Reloading Xunicode for encoding 'TU' ***
 )
 (/Users/guangyu/Library/TinyTeX/texmf-dist/tex/xelatex/xecjk/xunicode-extra.def
@@ -1225,6 +1297,7 @@ LaTeX Font Info:    ... okay on input line 194.
 LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 194.
 LaTeX Font Info:    Trying to load font information for T3+cmr on input line 19
 4.
+
 (/Users/guangyu/Library/TinyTeX/texmf-dist/tex/latex/tipa/t3cmr.fd
 File: t3cmr.fd 2001/12/31 TIPA font definitions
 )
@@ -1233,6 +1306,7 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 194.
 LaTeX Font Info:    ... okay on input line 194.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 194.
 LaTeX Font Info:    ... okay on input line 194.
+
 ABD: EverySelectfont initializing macros
 LaTeX Info: Redefining \selectfont on input line 194.
 LaTeX Info: Redefining \microtypecontext on input line 194.
@@ -1284,6 +1358,7 @@ ern Roman (RS)
 Package hyperref Info: Link coloring ON on input line 194.
 (/Users/guangyu/Library/TinyTeX/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
+
 (/Users/guangyu/Library/TinyTeX/texmf-dist/tex/latex/refcount/refcount.sty
 Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 )
@@ -1296,13 +1371,14 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 194.
 LaTeX Info: Redefining \pageref on input line 194.
 LaTeX Info: Redefining \nameref on input line 194.
-(./Chinese_book_template.out) (./Chinese_book_template.out)
+ (./Chinese_book_template.out) (./Chinese_book_template.out)
 \@outlinefile=\write7
 \openout7 = `Chinese_book_template.out'.
 
 \c@lstlisting=\count369
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 1
 96.
+
 (/Users/guangyu/Library/TinyTeX/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
@@ -1312,16 +1388,19 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Trying to load font information for OML+lmm on input line 1
 96.
+
 (/Users/guangyu/Library/TinyTeX/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
 196.
+
 (/Users/guangyu/Library/TinyTeX/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
 196.
+
 (/Users/guangyu/Library/TinyTeX/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
@@ -1333,18 +1412,23 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <6> on input line 196.
 LaTeX Font Info:    Trying to load font information for U+msa on input line 196
 .
+
 (/Users/guangyu/Library/TinyTeX/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-) (/Users/guangyu/Library/TinyTeX/texmf-dist/tex/latex/microtype/mt-msa.cfg
+)
+(/Users/guangyu/Library/TinyTeX/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
 LaTeX Font Info:    Trying to load font information for U+msb on input line 196
 .
+
 (/Users/guangyu/Library/TinyTeX/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) (/Users/guangyu/Library/TinyTeX/texmf-dist/tex/latex/microtype/mt-msb.cfg
+)
+(/Users/guangyu/Library/TinyTeX/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
-) [1
+)
+[1
 
 
 
@@ -1357,58 +1441,63 @@ Package xcolor Warning: Incompatible color definition on input line 1.
 
 Package xcolor Warning: Incompatible color definition on input line 2.
 
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10.53937> on input line 2.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 2.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 2.
+
+Package xcolor Warning: Incompatible color definition on input line 3.
+
 )
 \tf@toc=\write8
 \openout8 = `Chinese_book_template.toc'.
 
-[3]
+ [3]
 LaTeX Font Info:    Font shape `TU/SongtiSCLight(0)/m/sl' in size <10.53937> no
 t available
 (Font)              Font shape `TU/SongtiSCLight(0)/m/it' tried instead on inpu
 t line 202.
-[4
+ [4
 
 ]
 
-Package xcolor Warning: Incompatible color definition on input line 205.
+Package hyperref Warning: Suppressing empty link on input line 205.
 
 [5] [6
 
 ]
-第一章
 
-Package xcolor Warning: Incompatible color definition on input line 216.
+Package natbib Warning: Citation `blei2017variational' on page vii undefined on
+ input line 214.
 
-
-Package xcolor Warning: Incompatible color definition on input line 216.
-
-[1
-
-] [2
+[7] [8
 
 ]
-第二章
 
-Package xcolor Warning: Incompatible color definition on input line 245.
+Package natbib Warning: Citation `kingma2013auto' on page ix undefined on input
+ line 243.
 
+No file Chinese_book_template.bbl.
+[9] [10
 
-Package xcolor Warning: Incompatible color definition on input line 245.
+]
+No file Chinese_book_template.ind.
 
-(./Chinese_book_template.bbl [3] [4
+Package natbib Warning: There were undefined citations.
 
-]) [5] [6
-
-] (./Chinese_book_template.ind) (./Chinese_book_template.aux)
+(./Chinese_book_template.aux)
 Package rerunfilecheck Info: File `Chinese_book_template.out' has not changed.
-(rerunfilecheck)             Checksum: 5F7A40232D4FB240C1C92D6249F7211F;159.
+(rerunfilecheck)             Checksum: 5639D39D6FB44A105031444B28BC41D8;226.
  ) 
 Here is how much of TeX's memory you used:
- 39962 strings out of 478918
- 833301 string characters out of 5865779
- 1190270 words of memory out of 5000000
- 59099 multiletter control sequences out of 15000+600000
- 416290 words of font info for 74 fonts, out of 8000000 for 9000
+ 40004 strings out of 478918
+ 833966 string characters out of 5865779
+ 1190282 words of memory out of 5000000
+ 59133 multiletter control sequences out of 15000+600000
+ 428337 words of font info for 91 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 101i,6n,107p,590b,1159s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 101i,6n,107p,590b,1157s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on Chinese_book_template.pdf (12 pages).
+Output written on Chinese_book_template.pdf (10 pages).
