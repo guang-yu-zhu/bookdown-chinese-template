@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>2 Chapter 2 | 中文书示例</title>
+  <title>1 Block | 中文书示例</title>
   <meta name="description" content="一个简单的中文书示例。" />
-  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.22.2 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="2 Chapter 2 | 中文书示例" />
+  <meta property="og:title" content="1 Block | 中文书示例" />
   <meta property="og:type" content="book" />
   
   
@@ -16,22 +16,23 @@
   <meta name="github-repo" content="guang-yu-zhu/bookdown-chinese-template" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="2 Chapter 2 | 中文书示例" />
+  <meta name="twitter:title" content="1 Block | 中文书示例" />
   
   <meta name="twitter:description" content="一个简单的中文书示例。" />
   
 
+<meta name="author" content="雷鸣" />
 
 
-<meta name="date" content="2021-04-27" />
+<meta name="date" content="2021-04-28" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="chapter-2.html"/>
-
+<link rel="prev" href="index.html"/>
+<link rel="next" href="chapter-2.html"/>
 <script src="libs/header-attrs/header-attrs.js"></script>
 <script src="libs/jquery/jquery.min.js"></script>
 <link href="libs/gitbook/css/style.css" rel="stylesheet" />
@@ -50,10 +51,36 @@
 
 
 
+<link href="libs/anchor-sections/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections/anchor-sections.js"></script>
 
 
+
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
 
 <link rel="stylesheet" href="css/style.css" type="text/css" />
+<link rel="stylesheet" href="css/gzhu_book_style.css" type="text/css" />
 </head>
 
 <body>
@@ -70,8 +97,9 @@
 
 <li class="divider"></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>前言</a></li>
-<li class="chapter" data-level="1" data-path="chapter-2.html"><a href="chapter-2.html"><i class="fa fa-check"></i><b>1</b> Chapter 2</a></li>
-<li class="chapter" data-level="2" data-path="chapter-2-1.html"><a href="chapter-2-1.html"><i class="fa fa-check"></i><b>2</b> Chapter 2</a></li>
+<li class="chapter" data-level="1" data-path="chapter1.html"><a href="chapter1.html"><i class="fa fa-check"></i><b>1</b> Block</a></li>
+<li class="chapter" data-level="2" data-path="chapter-2.html"><a href="chapter-2.html"><i class="fa fa-check"></i><b>2</b> Chapter 2</a></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>参考文献</a></li>
 </ul>
 
       </nav>
@@ -89,12 +117,24 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="chapter-2-1" class="section level1" number="2">
-<h1><span class="header-section-number">2</span> Chapter 2</h1>
-<p><strong>References</strong></p>
-<div id="refs">
+<div id="chapter1" class="section level1" number="1">
+<h1><span class="header-section-number">1</span> Block</h1>
 
+<div class="rmdwarn">
+<p>这是警告</p>
+<ul>
+<li>a list item</li>
+<li>another item</li>
+</ul>
 </div>
+<!--
+\BeginKnitrBlock{rmdtip}<div class="rmdtip">__这是提示__</div>\EndKnitrBlock{rmdtip}
+
+\BeginKnitrBlock{rmdnote}<div class="rmdnote">这是注意</div>\EndKnitrBlock{rmdnote}
+
+\BeginKnitrBlock{rmdinfo}<div class="rmdinfo">普通说明</div>\EndKnitrBlock{rmdinfo}
+
+-->
 
 </div>
             </section>
@@ -102,8 +142,8 @@
           </div>
         </div>
       </div>
-<a href="chapter-2.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-
+<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="chapter-2.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook/js/app.min.js"></script>
@@ -126,6 +166,7 @@ gitbook.start({
 "weibo": false,
 "instapaper": false,
 "vk": false,
+"whatsapp": false,
 "all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
 },
 "fontsettings": {
@@ -145,7 +186,7 @@ gitbook.start({
 "link": null,
 "text": null
 },
-"download": null,
+"download": ["Chinese_book_template.pdf"],
 "toc": {
 "collapse": "none"
 }

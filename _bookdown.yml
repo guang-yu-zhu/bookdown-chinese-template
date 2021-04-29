@@ -5,7 +5,8 @@ output_dir: docs
 rmd_files: [
         "index.Rmd",
         "01.Rmd",
-        "02.Rmd"
+        "02.Rmd",
+        "99-references.Rmd"
         ]
 clean: [packages.bib, bookdown.bbl]
 # language:

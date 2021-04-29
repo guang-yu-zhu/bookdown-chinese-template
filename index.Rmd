@@ -1,15 +1,15 @@
 --- 
 title: "中文书示例"
-author: ""
+author: "雷鸣"
 date: "`r Sys.Date()`"
 documentclass: ctexbook
 bibliography: [book.bib, article.bib]
 biblio-style: apalike
 link-citations: yes
 colorlinks: yes
-lot: yes
-lof: yes
-geometry: [b5paper, tmargin=2.5cm, bmargin=2.5cm, lmargin=3.5cm, rmargin=2.5cm]
+#lot: no
+#lof: no
+geometry: [a4paper, tmargin=2cm, bmargin=2cm, lmargin=2cm, rmargin=2cm]
 site: bookdown::bookdown_site
 description: "一个简单的中文书示例。"
 github-repo: guang-yu-zhu/bookdown-chinese-template
@@ -29,7 +29,7 @@ lapply(c(), function(pkg) {
 
 # 前言 {-}
 
-第 \@ref(markdown) 章是关于
+第 \@ref(chapter1) 章是关于
 
 
 ```{block2, type='flushright', html.tag='p'}

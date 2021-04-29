@@ -54,4 +54,63 @@
 }
 \makeatother
 
+
+%% The rest are from the preamble.tex of https://github.com/XiangyunHuang/ElegantBookdown
+
+\usepackage[export]{adjustbox} %Needed for max width
+%\patchcmd{<command>}{<code to replace>}{<code>}{<success>}{<failure>}
+%The following codes add max dimension option to includegraphics
+%Gin@ii is from graphicx package and looks for a second optional argument
+\expandafter\patchcmd\csname Gin@ii\endcsname 
+{\setkeys{Gin}{#1}}
+{\setkeys{Gin}{max width=\textwidth, max height=.5\textwidth,keepaspectratio,#1}}
+{}
+{}
+
+
+%%  Define rmdtip rmdwarn rmdinfo
+\usepackage{xcolor}
+\definecolor{colortip}{RGB}{81,183,73}
+\definecolor{colornote}{RGB}{251,188,5}
+\definecolor{colorwarn}{RGB}{255,83,59}
+\definecolor{colorinfo}{RGB}{204,204,204}
+
+\usepackage[most]{tcolorbox}
+\tcbset{
+	colbacktitle=white,
+	enhanced,
+	attach boxed title to top center={yshift=-2mm},
+	colback=white, % 背景色
+	coltext=black, % 文本色
+	leftrule=1mm,
+	rightrule=.25mm,
+	bottomrule=.25mm,
+	toprule=.25mm,
+	boxsep=1pt, % 文字和边框的空隙
+	arc=1pt % 圆角
+}
+
+\newtcolorbox{rmdtip}{
+	title=Tip,
+	coltitle=colortip,
+	colframe=colortip, % 边框色
+}
+
+\newtcolorbox{rmdnote}{
+	title=Note,
+	coltitle=colornote,
+	colframe=colornote % 边框色
+}
+
+\newtcolorbox{rmdwarn}{
+	title=Warning,
+	coltitle=colorwarn,
+	colframe=colorwarn % 边框色
+}
+
+\newtcolorbox{rmdinfo}{
+	colframe=colorinfo % 边框色
+}
+
+
 \frontmatter

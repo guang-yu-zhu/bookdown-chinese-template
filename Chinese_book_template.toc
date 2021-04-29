@@ -1,2 +1,0 @@
-\contentsline {chapter}{\numberline {第一章\hspace {.3em}}Chapter 2}{11}{chapter.1}%
-\contentsline {chapter}{\numberline {第二章\hspace {.3em}}Chapter 2}{13}{chapter.2}%

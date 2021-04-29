@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>中文书示例</title>
   <meta name="description" content="一个简单的中文书示例。" />
-  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.22.2 and GitBook 2.6.7" />
 
   <meta property="og:title" content="中文书示例" />
   <meta property="og:type" content="book" />
@@ -21,6 +21,7 @@
   <meta name="twitter:description" content="一个简单的中文书示例。" />
   
 
+<meta name="author" content="雷鸣" />
 
 
 <meta name="date" content="2021-04-28" />
@@ -31,7 +32,7 @@
   
   
 
-<link rel="next" href="chapter-1.html"/>
+<link rel="next" href="chapter1.html"/>
 <script src="libs/header-attrs/header-attrs.js"></script>
 <script src="libs/jquery/jquery.min.js"></script>
 <link href="libs/gitbook/css/style.css" rel="stylesheet" />
@@ -50,10 +51,36 @@
 
 
 
+<link href="libs/anchor-sections/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections/anchor-sections.js"></script>
 
 
+
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
 
 <link rel="stylesheet" href="css/style.css" type="text/css" />
+<link rel="stylesheet" href="css/gzhu_book_style.css" type="text/css" />
 </head>
 
 <body>
@@ -70,8 +97,9 @@
 
 <li class="divider"></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>前言</a></li>
-<li class="chapter" data-level="1" data-path="chapter-1.html"><a href="chapter-1.html"><i class="fa fa-check"></i><b>1</b> Chapter 1</a></li>
+<li class="chapter" data-level="1" data-path="chapter1.html"><a href="chapter1.html"><i class="fa fa-check"></i><b>1</b> Block</a></li>
 <li class="chapter" data-level="2" data-path="chapter-2.html"><a href="chapter-2.html"><i class="fa fa-check"></i><b>2</b> Chapter 2</a></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>参考文献</a></li>
 </ul>
 
       </nav>
@@ -91,12 +119,12 @@
             <section class="normal" id="section-">
 <div id="header">
 <h1 class="title">中文书示例</h1>
-<p class="author"><em></em></p>
-<p class="date"><em>2021-04-28</em></p>
+<p class="author"><em>雷鸣</em></p>
+<p class="date" style="margin-top: 1.5em;"><em>2021-04-28</em></p>
 </div>
 <div id="前言" class="section level1 unnumbered">
 <h1>前言</h1>
-<p>第 <a href="#markdown"><strong>??</strong></a> 章是关于</p>
+<p>第 <a href="chapter1.html#chapter1">1</a> 章是关于</p>
 
 <p class="flushright">
 于 R 村某角落
@@ -109,7 +137,7 @@
         </div>
       </div>
 
-<a href="chapter-1.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="chapter1.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook/js/app.min.js"></script>
@@ -125,13 +153,14 @@
 gitbook.require(["gitbook"], function(gitbook) {
 gitbook.start({
 "sharing": {
-"github": true,
+"github": false,
 "facebook": false,
 "twitter": true,
 "linkedin": false,
 "weibo": false,
 "instapaper": false,
 "vk": false,
+"whatsapp": false,
 "all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
 },
 "fontsettings": {

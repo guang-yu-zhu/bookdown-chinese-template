@@ -1,6 +1,6 @@
 bookdown::gitbook:
-  css: css/style.css
-  split_by: chapter
+  split_bib: yes
+  css: [css/style.css, css/gzhu_book_style.css]
   config:
     toc:
       collapse: none
@@ -11,13 +11,13 @@ bookdown::gitbook:
 #    download: [pdf, epub]
 #    edit: https://github.com/yihui/bookdown-chinese/edit/master/%s
     sharing:
-      github: yes
+      github: no
       facebook: no
 bookdown::pdf_book:
-#  includes:
-#    in_header: latex/preamble.tex
+  includes:
+    in_header: latex/mypreamble.tex
 #    before_body: latex/before_body.tex
-#    after_body: latex/after_body.tex
+    after_body: latex/after_body.tex
   keep_tex: yes
   dev: "cairo_pdf"
   latex_engine: xelatex
@@ -29,4 +29,4 @@ bookdown::pdf_book:
   toc_appendix: yes
   quote_footer: ["\\begin{flushright}", "\\end{flushright}"]
 bookdown::epub_book:
-  stylesheet: css/style.css
+  stylesheet: [css/style.css, css/gzhu_book_style.css]

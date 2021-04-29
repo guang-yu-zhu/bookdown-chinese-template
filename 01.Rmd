@@ -1,5 +1,29 @@
-# Chapter 1
+# Block {#chapter1}
+
+
+```{block2,type='rmdwarn'}
+这是警告
+
+- a list item
+- another item
+
+```
 
 
 
-@blei2017variational
+```{block2,type='rmdtip'}
+__这是提示__
+```
+
+```{block2,type='rmdnote'}
+这是注意
+```
+
+```{block2,type='rmdinfo'}
+普通说明
+```
+
+
+
+
+
