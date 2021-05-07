@@ -3,7 +3,7 @@ bookdown::gitbook:
   css: [css/style.css, css/gzhu_book_style.css]
   config:
     toc:
-      collapse: none
+      collapse: subsection
       before: |
         <li><a href="./">中文书示例</a></li>
 #      after: |
